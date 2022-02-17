@@ -32,15 +32,18 @@ public class Card {
 //TO DO DEINITIALIZER
     
 }
-var message = [String]()
-func addMessage(text:  String) {
-    message.append(text)
-}
+var vettInterfaces = [Interface]()
 struct Interface {
     var Number : Int
     var vettCard : [Card]
 }
-var vettInterfaces = [Interface]()
+var message = [String]()
+func addMessage(text:  String) {
+    
+    message.append(text)
+}
+
+
 
  
 var N: Int = 4

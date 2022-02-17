@@ -6,13 +6,34 @@
 //
 
 import SwiftUI
-
+import AVFoundation
 struct FavView: View {
+    let speechService = SpeechService()
+
+    
+    
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("so bell")
+            
+            Button("Done", action: {
+                speechService.say("hello man")
+            })
+        }
+
+
+   /*     override func viewDidAppear( _ animated : Bool) {
+            super.viewDidApperar(animated)
+            speechService.say("hello man")
+        } */
+        /*
+        HStack {
+            Text("Hello, World!")
+        }
+
         
+        */
     }
 }
 
