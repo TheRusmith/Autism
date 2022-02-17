@@ -10,61 +10,46 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack{
-            ZStack{
+            HStack{
+            Image("menu")
+                .resizable()
+                .frame(width: 40, height: 40)
+                .padding(.leading, 10)
                 
-        Rectangle()
-                .ignoresSafeArea()
-                .foregroundColor(.green)
-                .frame(width: 414, height: 140)
-                HStack{
-                    Spacer()
-                    
-                    Rectangle()
-                        .position(x: -20, y: 45)
-                        .frame(width: 2, height: 90)
-               
-                    Button {
-//                  Accade qualcosa
-                    } label: {
-                               Image("arrow")
-                                   .resizable()
-                                   .position(x: 20, y: 30)
-                                   .brightness(0)
-                                   .scaledToFit()
-                                   .frame(width: 75)
-                                   .shadow(radius: 4, y: 2)
-                           }
-                }
+                
+            Spacer()
+                
+            Image(systemName: "gearshape")
+                .imageScale(.large)
+                .foregroundColor(Color(UIColor.darkGray))
+                .padding(.trailing, 10)
+                .font(.system(size:25))
+            
             }
-            VStack{
-                Image("want")
-                    .frame(width: 150, height: 150, alignment: .center)
-                    .padding(.top, 90)
-                    .overlay(){
-                        Text("I want...")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 320)
-                }
-                
-                Button(action: {
-                    FeelView()
-                        }, label: {
-                            Image("want")
-                                .frame(width: 150, height: 150, alignment: .center)
-                                .padding(.top, 90)
-                                .overlay(){
-                                    Text("I feel...")
-                                        .font(.callout)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color.black)
-                                        .padding(.top, 320)
-                            }
-                        })
-                
-                Spacer()
-            }
+            
+            Rectangle()
+                .frame(width: 280, height: 60)
+                .opacity(0)   // Rettangolo immaginario (megli di .padding)
+            
+            Image("fox")
+                .resizable()
+                .scaledToFill()
+                .clipShape(Circle())
+                .shadow(radius: 10)
+                .overlay(Circle().stroke(Color.red, lineWidth: 5))
+                .frame(width: 30, height: 190)
+            
+            Rectangle()
+                .frame(width: 280, height: 10)
+                .opacity(0)   // Rettangolo immaginario (megli di .padding)
+            
+            Text("Welcome back,")
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
+            Text("Rodolfo!")
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+            
                 Spacer()
             }
         }
