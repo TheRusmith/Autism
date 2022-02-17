@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack{
+            
             HStack{
             Image("menu")
                 .resizable()
@@ -29,7 +30,7 @@ struct HomeView: View {
             .statusBar(hidden: true)
             
             Rectangle()
-                .frame(width: 280, height: 60)
+                .frame(width: 280, height: 30)
                 .opacity(0)   // Rettangolo immaginario (megli di .padding)
             
             Image("fox")
@@ -51,15 +52,68 @@ struct HomeView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
             
-            Rectangle()
-                .frame(width: 280, height: 10)
-                .opacity(0.5)   // Rettangolo immaginario (megli di .padding)
+//            Rectangle()
+//                .frame(width: 280, height: 10)
+//                .opacity(0)   // Rettangolo immaginario (megli di .padding)
             
+            VStack{
+
+                Spacer()
+                Button {
+                       } label: {
             Rectangle()
-                .frame(width: 200, height: 160)
+                .cornerRadius(15)
+                .shadow(radius: 15)
+                .frame(width: 200, height: 180)
+                .foregroundColor(.white)
+                .overlay(
+                    VStack{
+                    Image("feel")
+                        .resizable()
+                        .scaledToFit()
+                        .aspectRatio(0.85, contentMode: .fit)
+                        .frame(width: 200, height: 140)
+                        Spacer()
+                        
+                        Text("I feel...")
+                            .foregroundColor(.black)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                    }
+                )
+                       }
+            Spacer()
             
+                Button {
+                       } label: {
+            Rectangle()
+                .cornerRadius(15)
+                .shadow(radius: 15)
+                .frame(width: 200, height: 180)
+                .foregroundColor(.white)
+                .overlay(
+                    VStack{
+                    Image("want")
+                        .resizable()
+                        .scaledToFit()
+                        .aspectRatio(0.85, contentMode: .fit)
+                        .frame(width: 200, height: 140)
+                        
+                        Spacer()
+                        
+                        Text("I want...")
+                            .foregroundColor(.black)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                    }
+                )
+                       }
                 Spacer()
             }
+        }
         }
         
     }
