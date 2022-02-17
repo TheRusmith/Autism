@@ -11,6 +11,7 @@
 		2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C727BE50EF006A13E5 /* Image&Extension.swift */; };
 		2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C927BE511D006A13E5 /* Audio.swift */; };
 		2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7CB27BE5161006A13E5 /* DataHandling.swift */; };
+		2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7D127BE64D7006A13E5 /* SpeechService.swift */; };
 		5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F850927BCEBE9004592D9 /* AutismApp.swift */; };
 		5A0F850E27BCEBEA004592D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F850D27BCEBEA004592D9 /* Assets.xcassets */; };
 		5A0F851127BCEBEA004592D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		2678D7C727BE50EF006A13E5 /* Image&Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image&Extension.swift"; sourceTree = "<group>"; };
 		2678D7C927BE511D006A13E5 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2678D7CB27BE5161006A13E5 /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
+		2678D7D127BE64D7006A13E5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		5A0F850627BCEBE9004592D9 /* Autism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F850927BCEBE9004592D9 /* AutismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutismApp.swift; sourceTree = "<group>"; };
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				5A0F851C27BE3D6E004592D9 /* NavigationView.swift */,
 				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
 				5A0F852027BE3D89004592D9 /* FavView.swift */,
+				2678D7D127BE64D7006A13E5 /* SpeechService.swift */,
 				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 				2678D7C527BE50B6006A13E5 /* ImagePicker.swift */,
 				2678D7C727BE50EF006A13E5 /* Image&Extension.swift */,
@@ -177,6 +180,7 @@
 			files = (
 				2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
+				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,

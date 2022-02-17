@@ -14,7 +14,7 @@ struct Navigation: View {
     @SceneStorage("activeTab") private var activeTab = Tab.home
     
     enum Tab: Int {
-        case home, buy, ticket
+        case home, favourite, ticket
     }
     
     var body: some View {
