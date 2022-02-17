@@ -16,7 +16,6 @@ struct HomeView: View {
                 .frame(width: 40, height: 40)
                 .padding(.leading, 10)
                 
-                
             Spacer()
                 
             Image(systemName: "gearshape")
@@ -26,6 +25,8 @@ struct HomeView: View {
                 .font(.system(size:25))
             
             }
+            
+            .statusBar(hidden: true)
             
             Rectangle()
                 .frame(width: 280, height: 60)
@@ -49,6 +50,13 @@ struct HomeView: View {
             Text("Rodolfo!")
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
+            
+            Rectangle()
+                .frame(width: 280, height: 10)
+                .opacity(0.5)   // Rettangolo immaginario (megli di .padding)
+            
+            Rectangle()
+                .frame(width: 200, height: 160)
             
                 Spacer()
             }
