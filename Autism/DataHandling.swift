@@ -2,7 +2,7 @@
 //  DataHandling.swift
 //  Autism
 //
-//  Created by Francesco Viola on 16/02/22.
+//  Created by Francesco Viola on 17/02/22.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import SwiftUI
 public class Card {
     private var id : UUID
     private var title : String
-    private var image : UIImage 
+    private var image : UIImage
 //    private var text : String
     init (id : UUID,title : String , image : UIImage ) { //si inizializza card
         self.id = UUID()
@@ -54,7 +54,7 @@ func deleteFromInterface(Number: Int) {
 }
 
 
-//TO DO ADD CARD TO INTERFACE --DONE IN THE CLASS 
+//TO DO ADD CARD TO INTERFACE --DONE IN THE CLASS
 func addCard(card : Card,intNumber : Int)  {
     //accedere al vettore di interfacce e selezionare l interfaccia giusta
     //successivamente aggiungere la card all interfaccia

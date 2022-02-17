@@ -2,10 +2,8 @@
 //  ImagePicker.swift
 //  Autism
 //
-//  Created by Francesco Viola on 16/02/22.
-//SwiiftUI Camera
-
-
+//  Created by Francesco Viola on 17/02/22.
+//
 
 import Foundation
 import SwiftUI
