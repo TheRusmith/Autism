@@ -18,7 +18,7 @@ public class Card {
         self.image = UIImage(systemName: "gearshape")!
         
     }
-    //wakanda
+    //wakanda r3uhwhuwrhjiw
 /*    init (id : UUID,title : String , image : UIImage ) { //si inizializza card
         self.id = UUID()
         self.title = title
