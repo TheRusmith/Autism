@@ -14,13 +14,13 @@ struct FavView: View {
     
     
     var body: some View {
-        HStack {
-            Text("so bell")
-            
-            Button("Done", action: {
-                speechService.say("hello man")
-            })
-        }
+        NavigationView {
+                   VStack {
+                       NavigationLink(destination: FeelView()) {
+                           Text("Do Something")
+                       }
+                   }
+               }
 
 
    /*     override func viewDidAppear( _ animated : Bool) {

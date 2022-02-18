@@ -22,6 +22,7 @@
 		5A0F852127BE3D89004592D9 /* FavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852027BE3D89004592D9 /* FavView.swift */; };
 		5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852227BE3D9B004592D9 /* CreateView.swift */; };
 		5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852427BE3DC8004592D9 /* FeelView.swift */; };
+		5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852727BEA755004592D9 /* TestButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5A0F852027BE3D89004592D9 /* FavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavView.swift; sourceTree = "<group>"; };
 		5A0F852227BE3D9B004592D9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		5A0F852427BE3DC8004592D9 /* FeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelView.swift; sourceTree = "<group>"; };
+		5A0F852727BEA755004592D9 /* TestButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,15 +77,13 @@
 			children = (
 				5A0F850927BCEBE9004592D9 /* AutismApp.swift */,
 				5A0F851C27BE3D6E004592D9 /* NavigationView.swift */,
-				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
-				5A0F852027BE3D89004592D9 /* FavView.swift */,
 				2678D7D127BE64D7006A13E5 /* SpeechService.swift */,
-				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 				2678D7C527BE50B6006A13E5 /* ImagePicker.swift */,
 				2678D7C727BE50EF006A13E5 /* Image&Extension.swift */,
 				2678D7C927BE511D006A13E5 /* Audio.swift */,
 				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
 				5A0F852627BE3DEE004592D9 /* Views */,
+				5A0F852B27BEB193004592D9 /* Sub-views */,
 				5A0F850D27BCEBEA004592D9 /* Assets.xcassets */,
 				5A0F850F27BCEBEA004592D9 /* Preview Content */,
 			);
@@ -103,9 +103,20 @@
 		5A0F852627BE3DEE004592D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
+				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
+				5A0F852027BE3D89004592D9 /* FavView.swift */,
+				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5A0F852B27BEB193004592D9 /* Sub-views */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
+				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
+			);
+			path = "Sub-views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,
 				2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */,
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
+				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */,
 				2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */,
 				5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeelView: View {
     var body: some View {
+        NavigationView{
         VStack{
             ZStack{
                 
@@ -149,7 +150,7 @@ struct FeelView: View {
         
     }
 }
-
+}
 struct FeelView_Previews: PreviewProvider {
     static var previews: some View {
         FeelView()
