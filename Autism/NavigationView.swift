@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Navigation: View {
-      
+    
     
     @SceneStorage("activeTab") private var activeTab = Tab.home
     
@@ -18,11 +18,11 @@ struct Navigation: View {
     }
     
     init() {
-//      UITabBar.appearance().backgroundColor = UIColor.red // colore sfondo tab ba intera
-//       UITabBar.appearance().isTranslucent = true
+        //      UITabBar.appearance().backgroundColor = UIColor.red // colore sfondo tab ba intera
+        //       UITabBar.appearance().isTranslucent = true
         UITabBar.appearance().unselectedItemTintColor = UIColor.lightGray //colore icone disattive
-      
-        }
+        
+    }
     
     var body: some View {
         TabView(selection: $activeTab) {
@@ -39,7 +39,7 @@ struct Navigation: View {
                 .tabItem{
                     Label("Create", systemImage: "pencil.circle.fill")
                     
-            }
+                }
         }
         .accentColor(Color.red)  //qui si cambia il colore dell'elemento selezionato nella tab bar
     }

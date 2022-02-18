@@ -18,7 +18,7 @@ public class Card {
         self.image = UIImage(systemName: "gearshape")!
         
     }
-    //wakanda
+    //wakanda r3uhwhuwrhjiw
 /*    init (id : UUID,title : String , image : UIImage ) { //si inizializza card
         self.id = UUID()
         self.title = title
@@ -32,20 +32,32 @@ public class Card {
         if (self.title != title ) {
             self.title = title
         }
-        self.title = title
+        
         self.image = image
         
     }
 //TO DO DEINITIALIZER
-    
+
 }
+var Card1 = Card()
+//edit card function
+
 var vettInterfaces = [Interface]()
+// va bene usare enum???
 enum Interfaces: String  {
     case feel,want
 }
+
 struct Interface {
     var Name : String
     var vettCard : [Card]
+}
+//how to connect enum interfaces with interface
+var InterfacesWant = Interface(Name: "want",vettCard: [Card]())
+//InterfacesWant.vettCard.insert(Card1)
+
+class MyInterface {
+    
 }
 var message = [String]()
 func addMessage(text:  String) {
@@ -67,14 +79,9 @@ func deleteFromInterface(Number: Int) {
 }
 
 
-//TO DO ADD CARD TO INTERFACE --DONE IN THE CLASS
-func addCard(card : Card,intNumber : Int)  {
-    //accedere al vettore di interfacce e selezionare l interfaccia giusta
-    //successivamente aggiungere la card all interfaccia
-//    Interface = Interface.InterfaceNumber
- //    Interface.vettCard.insert(card)
-    
-}
+
+
+
 
 
 
