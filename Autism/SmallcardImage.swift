@@ -9,10 +9,12 @@ import SwiftUI
 
 struct SmallcardImage: View {
     var body: some View {
-        Image("fox")
+        
+        Image("dog")
             .resizable()
+            .scaledToFill()
             .frame(width: 60, height: 60)
-            .border(<#T##content: ShapeStyle##ShapeStyle#>)
+            .cornerRadius(10)
     }
 }
 
