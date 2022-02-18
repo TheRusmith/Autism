@@ -5,22 +5,29 @@
 //  Created by Francesco Viola on 17/02/22.
 //
 
-import Foundation
+import Foundation     
 import SwiftUI
 public class Card {
-    private var id : UUID
-    private var title : String
-    private var image : UIImage
+     var id : String
+     var title : String
+     var image : UIImage
 //    private var text : String
-    init (id : UUID,title : String , image : UIImage ) { //si inizializza card
+    init () {
+        self.id = "NotDefined"
+        self.title = "Null"
+        self.image = UIImage(systemName: "gearshape")!
+        
+    }
+    
+/*    init (id : UUID,title : String , image : UIImage ) { //si inizializza card
         self.id = UUID()
         self.title = title
         self.image = image
         addToInterface(card: self , number: 3)
-  }
-    func editCard(id : UUID,title : String , image : UIImage) {
+  } */
+    func editCard(id : String ,title : String , image : UIImage) {
         if (self.id != id ) {
-            self.id = UUID()
+            self.id = id
         }
         if (self.title != title ) {
             self.title = title
@@ -33,8 +40,11 @@ public class Card {
     
 }
 var vettInterfaces = [Interface]()
+enum Interfaces: String  {
+    case feel,want
+}
 struct Interface {
-    var Number : Int
+    var Name : String
     var vettCard : [Card]
 }
 var message = [String]()
