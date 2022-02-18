@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SmallcardImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("fox")
+            .resizable()
+            .frame(width: 60, height: 60)
+            .border(<#T##content: ShapeStyle##ShapeStyle#>)
     }
 }
 
