@@ -32,16 +32,16 @@ struct FeelView: View {
                        Image("arrow")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 90, height: 90, alignment: .center)
+                            .frame(width: 80, height: 80, alignment: .center)
                             .padding(.top, 40)
                         Spacer()
                     }
                 }
                 Spacer()
             }
-            .navigationBarHidden(true)
             .ignoresSafeArea()
         }
+        .navigationBarHidden(true)
     }
 }
 struct FeelView_Previews: PreviewProvider {

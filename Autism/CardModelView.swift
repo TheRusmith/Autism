@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardModelView: View {
     var body: some View {
         VStack{
             ZStack{
@@ -24,22 +24,18 @@ struct CardView: View {
                         .padding(.leading, 120)
                 }
                 
-                Rectangle()
+                Image("fox")
+                    .resizable()
                     .frame(width: 130, height: 120, alignment: .center)
                     .padding(.trailing, 190)
                     .cornerRadius(20)
-                    .overlay {
-                        Text("Image here")
-                            .foregroundColor(.white)
-                            .padding(.trailing, 190)
-                    }
             }
         }
     }
 }
 
-struct CardView_Previews: PreviewProvider {
+struct CardModelView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardModelView()
     }
 }

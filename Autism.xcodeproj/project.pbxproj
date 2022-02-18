@@ -23,7 +23,7 @@
 		5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852227BE3D9B004592D9 /* CreateView.swift */; };
 		5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852427BE3DC8004592D9 /* FeelView.swift */; };
 		5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852727BEA755004592D9 /* TestButtonView.swift */; };
-		5A0F853427BFAAF5004592D9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F853327BFAAF5004592D9 /* CardView.swift */; };
+		5A0F853427BFAAF5004592D9 /* CardModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F853327BFAAF5004592D9 /* CardModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		5A0F852227BE3D9B004592D9 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		5A0F852427BE3DC8004592D9 /* FeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelView.swift; sourceTree = "<group>"; };
 		5A0F852727BEA755004592D9 /* TestButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButtonView.swift; sourceTree = "<group>"; };
-		5A0F853327BFAAF5004592D9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5A0F853327BFAAF5004592D9 /* CardModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				2678D7C727BE50EF006A13E5 /* Image&Extension.swift */,
 				2678D7C927BE511D006A13E5 /* Audio.swift */,
 				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
-				5A0F853327BFAAF5004592D9 /* CardView.swift */,
+				5A0F853327BFAAF5004592D9 /* CardModelView.swift */,
 				5A0F852627BE3DEE004592D9 /* Views */,
 				5A0F852B27BEB193004592D9 /* Sub-views */,
 				5A0F850D27BCEBEA004592D9 /* Assets.xcassets */,
@@ -196,7 +196,7 @@
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
-				5A0F853427BFAAF5004592D9 /* CardView.swift in Sources */,
+				5A0F853427BFAAF5004592D9 /* CardModelView.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,
 				2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */,
