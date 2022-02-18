@@ -1,0 +1,45 @@
+//
+//  CardView.swift
+//  Autism
+//
+//  Created by Mariano Piscitelli on 18/02/22.
+//
+
+import SwiftUI
+
+struct CardView: View {
+    var body: some View {
+        VStack{
+            ZStack{
+            Rectangle()
+                .frame(width: 320, height: 130, alignment: .center)
+                .cornerRadius(20)
+                .foregroundColor(.red)
+                .shadow(radius: 5)
+                .overlay {
+                    Text("Title")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding(.leading, 120)
+                }
+                
+                Rectangle()
+                    .frame(width: 130, height: 130, alignment: .center)
+                    .padding(.trailing, 190)
+                    .cornerRadius(20)
+                    .overlay {
+                        Text("Image here")
+                            .foregroundColor(.white)
+                            .padding(.trailing, 190)
+                    }
+            }
+        }
+    }
+}
+
+struct CardView_Previews: PreviewProvider {
+    static var previews: some View {
+        CardView()
+    }
+}
