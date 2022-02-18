@@ -70,7 +70,7 @@ struct HomeView: View {
                     NavigationLink(destination: FeelView(),  label: {
                     Rectangle()
                         .cornerRadius(15)
-                        .shadow(radius: 15)
+                        .shadow(radius: 10)
                         .frame(width: 190, height: 170)
                         .foregroundColor(.white)
                         .overlay(
@@ -103,7 +103,7 @@ struct HomeView: View {
                     NavigationLink(destination: FeelView(),  label: {
                     Rectangle()
                         .cornerRadius(15)
-                        .shadow(radius: 15)
+                        .shadow(radius: 10)
                         .frame(width: 190, height: 170)
                         .foregroundColor(.white)
                         .overlay(

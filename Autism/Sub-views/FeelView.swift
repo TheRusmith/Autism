@@ -10,146 +10,39 @@ import SwiftUI
 struct FeelView: View {
     var body: some View {
         NavigationView{
-        VStack{
-            ZStack{
-                
-        Rectangle()
-                .ignoresSafeArea()
-                .foregroundColor(.green)
-                .frame(width: 414, height: 140)
-                HStack{
-                    Spacer()
+            VStack{
+                ZStack{
                     
                     Rectangle()
-                        .position(x: -20, y: 45)
-                        .frame(width: 2, height: 90)
-               
-                    Button {
-//                  Accade qualcosa
-                    } label: {
-                               Image("arrow")
-                                   .resizable()
-                                   .position(x: 20, y: 30)
-                                   .brightness(0)
-                                   .scaledToFit()
-                                   .frame(width: 75)
-                                   .shadow(radius: 4, y: 2)
-                           }
-                    
+                        .frame(width: 414, height: 180, alignment: .center)
+                        .foregroundColor(Color.red)
+                        .shadow(radius: 15)
+                    HStack{
+                        Rectangle()
+                            .frame(width: 300, height: 132, alignment: .center)
+                            .padding(.top, 48)
+                            .opacity(0.4)
+                            .overlay {
+                                Text("qui devono apparire le cards")
+                                    .font(.title)
+                            }
+                        Rectangle()
+                                .frame(width: 2, height: 90, alignment: .center)
+                                .padding(.top, 40)
+                       Image("arrow")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 90, height: 90, alignment: .center)
+                            .padding(.top, 40)
+                        Spacer()
+                    }
                 }
-                
-            }
-            
-            HStack{
-                
-                Spacer()
-            
-            Image("happy")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("Happy")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                        
-                            
-                }
-                
-                Spacer()
-                
-                Image("tired")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("Tired")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                        
-                            
-                }
-                
-    
                 Spacer()
             }
-            .padding(.top, 30)
-            
-            HStack{
-                
-                Spacer()
-            
-            Image("angry")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("Angry")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                        
-                            
-                }
-                
-                Spacer()
-                
-                Image("sick")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("Sick")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                        
-                            
-                }
-                
-    
-                Spacer()
-            }
-            .padding(.top, 30)
-            
-            HStack{
-                
-                Spacer()
-            
-            Image("sad")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("Sad")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                        
-                            
-                }
-                
-                Spacer()
-                
-                Image("")
-                    .frame(width: 150, height: 150)
-                    .overlay(){
-                        Text("")
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.black)
-                            .padding(.top, 180)
-                }
-                
-    
-                Spacer()
-            }
-            .padding(.top, 30)
-            
-            Spacer()
-            
-         
+            .navigationBarHidden(true)
+            .ignoresSafeArea()
         }
-        
     }
-}
 }
 struct FeelView_Previews: PreviewProvider {
     static var previews: some View {
