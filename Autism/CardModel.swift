@@ -12,7 +12,7 @@ struct CardModel: View {
         VStack{
             ZStack{
             Rectangle()
-                .frame(width: 320, height: 120, alignment: .center)
+                .frame(width: 320, height: 110, alignment: .center)
                 .cornerRadius(20)
                 .foregroundColor(.red)
                 .shadow(radius: 5)
@@ -26,8 +26,8 @@ struct CardModel: View {
                 
                 Image("fox")
                     .resizable()
-                    .frame(width: 130, height: 120, alignment: .center)
-                
+                    .frame(width: 130, height: 110, alignment: .center)
+                    .scaledToFit()
                 .cornerRadius(20)
                     .padding(.trailing, 190)
             }
