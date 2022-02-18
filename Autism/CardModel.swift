@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardModelView: View {
+struct CardModel: View {
     var body: some View {
         VStack{
             ZStack{
@@ -34,8 +34,8 @@ struct CardModelView: View {
     }
 }
 
-struct CardModelView_Previews: PreviewProvider {
+struct CardModel_Previews: PreviewProvider {
     static var previews: some View {
-        CardModelView()
+        CardModel()
     }
 }
