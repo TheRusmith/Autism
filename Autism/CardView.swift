@@ -12,7 +12,7 @@ struct CardView: View {
         VStack{
             ZStack{
             Rectangle()
-                .frame(width: 320, height: 130, alignment: .center)
+                .frame(width: 320, height: 120, alignment: .center)
                 .cornerRadius(20)
                 .foregroundColor(.red)
                 .shadow(radius: 5)
@@ -25,7 +25,7 @@ struct CardView: View {
                 }
                 
                 Rectangle()
-                    .frame(width: 130, height: 130, alignment: .center)
+                    .frame(width: 130, height: 120, alignment: .center)
                     .padding(.trailing, 190)
                     .cornerRadius(20)
                     .overlay {
