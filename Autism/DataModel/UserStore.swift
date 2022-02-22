@@ -22,6 +22,7 @@ class UserStore: ObservableObject {
     @Published var wantpeople : [WantPeople] = []
    
    // wants.append(hr)
+    
 }
 
 
