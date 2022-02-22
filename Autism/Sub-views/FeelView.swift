@@ -13,6 +13,10 @@ struct FeelView: View {
             VStack{
                 ZStack{
                     
+                    ForEach(UserStore().wants,id: \.self) {
+                       CardModel(title: $0.title ,image: $0.imageName )
+                    //    Text("\($0.title)…")
+                    }
                     
                     Rectangle()
                         .frame(width: 414, height: 180, alignment: .center)
