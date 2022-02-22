@@ -19,14 +19,14 @@ struct CardModel: View {
                 .foregroundColor(.red)
                 .shadow(radius: 5)
                 .overlay {
-                    Text("Title")
+                    Text("\(title)")
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .padding(.leading, 120)
                 }
                 
-                Image("fox")
+                Image("\(image)")
                     .resizable()
                     .frame(width: 130, height: 110, alignment: .center)
                     .scaledToFill()

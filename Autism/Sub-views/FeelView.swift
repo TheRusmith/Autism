@@ -13,6 +13,7 @@ struct FeelView: View {
             VStack{
                 ZStack{
                     
+                    
                     Rectangle()
                         .frame(width: 414, height: 180, alignment: .center)
                         .foregroundColor(Color.red)
