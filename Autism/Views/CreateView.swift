@@ -16,11 +16,17 @@ struct CreateView: View {
     @State private var image: UIImage?
     @State private var isShowingDetailView = false
     var body: some View {
+
+        
+
+
         Text("PROVA")
             .navigationBarItems(trailing: Button(action: {
                 self.showSheet = true
-                
+
+
             }, label: {
+  
                 Image(systemName: "dot.viewfinder")
             })).actionSheet(isPresented: $showSheet) {
                 ActionSheet(title: Text("Select Photo"), message: Text("Choose"), buttons: [

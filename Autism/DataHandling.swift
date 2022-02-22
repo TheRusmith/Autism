@@ -10,38 +10,36 @@ import SwiftUI
 public class Card {
      var id : String
      var title : String
-     var image : UIImage
+     var image : Image
 //    private var text : String
     init () {
         self.id = "NotDefined"
         self.title = "Null"
-        self.image = UIImage(systemName: "gearshape")!
+        self.image = Image(systemName: "gearshape")
         
     }
     //wakanda r3uhwhuwrhjiw
-/*    init (id : UUID,title : String , image : UIImage ) { //si inizializza card
-        self.id = UUID()
+    init(id: String,title: String,image: Image) {
+        self.id = id
         self.title = title
         self.image = image
-        addToInterface(card: self , number: 3)
-  } */
-    func editCard(id : String ,title : String , image : UIImage) {
-        if (self.id != id ) {
-            self.id = id
-        }
-        if (self.title != title ) {
-            self.title = title
-        }
         
-        self.image = image
+    }
+    func editCard(id : String ,title : String , image : Image) {
+        
+            self.id = id
+            self.title = title
+            self.image = image
         
     }
 //TO DO DEINITIALIZER
 
 }
-var Card1 = Card()
-//edit card function
+var Card1 = Card(id:"01",title: "watermelon",image: Image("fox"))
+//Card1.editCard(id: "watermelon",title : "title ",image: "gearshape"!)
 
+//var cardNuova = Card(id: "watermelon",title: "title")
+//var Card2 = Card(id: "cane",title : "image22",image: "image")
 var vettInterfaces = [Interface]()
 // va bene usare enum???
 enum Interfaces: String  {

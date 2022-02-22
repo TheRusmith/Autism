@@ -12,6 +12,7 @@
 		2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C927BE511D006A13E5 /* Audio.swift */; };
 		2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7CB27BE5161006A13E5 /* DataHandling.swift */; };
 		2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7D127BE64D7006A13E5 /* SpeechService.swift */; };
+		2694F13827C4E9720063111C /* DataInizialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694F13727C4E9720063111C /* DataInizialization.swift */; };
 		5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F850927BCEBE9004592D9 /* AutismApp.swift */; };
 		5A0F850E27BCEBEA004592D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F850D27BCEBEA004592D9 /* Assets.xcassets */; };
 		5A0F851127BCEBEA004592D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */; };
@@ -26,15 +27,7 @@
 		5A0F853427BFAAF5004592D9 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F853327BFAAF5004592D9 /* CardModel.swift */; };
 		5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */; };
 		5A433C0F27C389A3007E7869 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0E27C389A3007E7869 /* Category.swift */; };
-		5A433C1127C389F1007E7869 /* subFeel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1027C389F1007E7869 /* subFeel.swift */; };
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
-		5A433C1527C38B6E007E7869 /* subWant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1427C38B6E007E7869 /* subWant.swift */; };
-		5A433C1727C38C1F007E7869 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1627C38C1F007E7869 /* Meal.swift */; };
-		5A433C1927C38F90007E7869 /* subWantPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1827C38F90007E7869 /* subWantPlay.swift */; };
-		5A433C1B27C39BEB007E7869 /* subWantEat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1A27C39BEB007E7869 /* subWantEat.swift */; };
-		5A433C1D27C39D82007E7869 /* subWantDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1C27C39D82007E7869 /* subWantDrink.swift */; };
-		5A433C1F27C39F03007E7869 /* subWantGo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1E27C39F03007E7869 /* subWantGo.swift */; };
-		5A433C2327C3A1B9007E7869 /* subWantPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C2227C3A1B9007E7869 /* subWantPeople.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +36,7 @@
 		2678D7C927BE511D006A13E5 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2678D7CB27BE5161006A13E5 /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
 		2678D7D127BE64D7006A13E5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		2694F13727C4E9720063111C /* DataInizialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInizialization.swift; sourceTree = "<group>"; };
 		5A0F850627BCEBE9004592D9 /* Autism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F850927BCEBE9004592D9 /* AutismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutismApp.swift; sourceTree = "<group>"; };
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,15 +52,7 @@
 		5A0F853327BFAAF5004592D9 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardImage.swift; sourceTree = "<group>"; };
 		5A433C0E27C389A3007E7869 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		5A433C1027C389F1007E7869 /* subFeel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subFeel.swift; sourceTree = "<group>"; };
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
-		5A433C1427C38B6E007E7869 /* subWant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWant.swift; sourceTree = "<group>"; };
-		5A433C1627C38C1F007E7869 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		5A433C1827C38F90007E7869 /* subWantPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWantPlay.swift; sourceTree = "<group>"; };
-		5A433C1A27C39BEB007E7869 /* subWantEat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWantEat.swift; sourceTree = "<group>"; };
-		5A433C1C27C39D82007E7869 /* subWantDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWantDrink.swift; sourceTree = "<group>"; };
-		5A433C1E27C39F03007E7869 /* subWantGo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWantGo.swift; sourceTree = "<group>"; };
-		5A433C2227C3A1B9007E7869 /* subWantPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subWantPeople.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
-				5A0F852027BE3D89004592D9 /* FavView.swift */,
 				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
+				5A0F852027BE3D89004592D9 /* FavView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,14 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5A433C0E27C389A3007E7869 /* Category.swift */,
-				5A433C1027C389F1007E7869 /* subFeel.swift */,
-				5A433C1427C38B6E007E7869 /* subWant.swift */,
-				5A433C1827C38F90007E7869 /* subWantPlay.swift */,
-				5A433C1A27C39BEB007E7869 /* subWantEat.swift */,
-				5A433C1C27C39D82007E7869 /* subWantDrink.swift */,
-				5A433C1E27C39F03007E7869 /* subWantGo.swift */,
-				5A433C2227C3A1B9007E7869 /* subWantPeople.swift */,
-				5A433C1627C38C1F007E7869 /* Meal.swift */,
+				2694F13727C4E9720063111C /* DataInizialization.swift */,
 				5A433C1227C38A23007E7869 /* UserStore.swift */,
 			);
 			path = DataModel;
@@ -233,28 +212,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A433C1F27C39F03007E7869 /* subWantGo.swift in Sources */,
 				2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */,
-				5A433C1D27C39D82007E7869 /* subWantDrink.swift in Sources */,
 				5A433C1327C38A23007E7869 /* UserStore.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
-				5A433C2327C3A1B9007E7869 /* subWantPeople.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
-				5A433C1B27C39BEB007E7869 /* subWantEat.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
 				5A0F853427BFAAF5004592D9 /* CardModel.swift in Sources */,
-				5A433C1127C389F1007E7869 /* subFeel.swift in Sources */,
 				5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,
-				5A433C1527C38B6E007E7869 /* subWant.swift in Sources */,
 				2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */,
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A433C0F27C389A3007E7869 /* Category.swift in Sources */,
 				5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */,
-				5A433C1727C38C1F007E7869 /* Meal.swift in Sources */,
-				5A433C1927C38F90007E7869 /* subWantPlay.swift in Sources */,
+				2694F13827C4E9720063111C /* DataInizialization.swift in Sources */,
 				2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */,
 				5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */,
 				5A0F851627BCEBEA004592D9 /* Autism.xcdatamodeld in Sources */,

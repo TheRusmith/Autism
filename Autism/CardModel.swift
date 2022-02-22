@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CardModel: View {
+    @State var title : String
+    @State var image: String
     var body: some View {
         VStack{
             ZStack{
@@ -37,6 +39,6 @@ struct CardModel: View {
 
 struct CardModel_Previews: PreviewProvider {
     static var previews: some View {
-        CardModel()
+        CardModel(title: "" ,image: "")
     }
 }
