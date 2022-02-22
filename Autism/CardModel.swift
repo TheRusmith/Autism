@@ -27,7 +27,7 @@ struct CardModel: View {
                 Image("fox")
                     .resizable()
                     .frame(width: 130, height: 110, alignment: .center)
-                    .scaledToFit()
+                    .scaledToFill()
                 .cornerRadius(20)
                     .padding(.trailing, 190)
             }

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Navigation: View {
-    
+    @EnvironmentObject private var userStore: UserStore
     
     @SceneStorage("activeTab") private var activeTab = Tab.home
     

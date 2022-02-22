@@ -14,6 +14,7 @@ struct AutismApp: App {
     var body: some Scene {
         WindowGroup {
             Navigation()
+                .environmentObject(UserStore())
         }
     }
 }
