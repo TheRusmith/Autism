@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct FeelView: View {
+    
     var body: some View {
+     
+
         NavigationView{
             VStack{
                 ZStack{
-                    
-                    ForEach(UserStore().wants,id: \.self) {
+ //                 UserStore().wants.append(Want(title: "", imageName: ""))
+                 /*   ForEach(UserStore().wants,id: \.self) {
                        CardModel(title: $0.title ,image: $0.imageName )
                     //    Text("\($0.title)…")
-                    }
+                    } */
                     
                     Rectangle()
                         .frame(width: 414, height: 180, alignment: .center)
@@ -52,5 +55,6 @@ struct FeelView: View {
 struct FeelView_Previews: PreviewProvider {
     static var previews: some View {
         FeelView()
+            .environmentObject(UserStore())
     }
 }
