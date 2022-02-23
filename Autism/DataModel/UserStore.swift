@@ -14,24 +14,27 @@ class UserStore: ObservableObject {
     @Published var level3: Level3? = nil
     
     @Published var feels: [Feel] = []
-    @Published var wants: [Want] = []
+    @Published var wants: [Want] = [Want(title: "Cane",imageName: "photo"),Want(title:"gatto",imageName: "fox")]
     @Published var wantplay: [WantPlay] = []
     @Published var wanteat: [WantEat] = []
     @Published var wantdrink : [WantDrink] = []
     @Published var wantgo : [WantGo] = []
     @Published var wantpeople : [WantPeople] = []
    
-   // wants.append(hr)
+   
     
+    //wants.insert(Want(title: "brividi ", imageName: "photo")
+  // var wants = [Want(title: "Cane",imageName: "photo")]
 }
+//feels = [Want1,Want2]
 
 
 
 //Image(uiImage: UIImage(named: hr.imageName)!)
 
-//ForEach(UserStore().wants, id: .self) { want in
-    //Text( want.title)
-//    Image(uiImage: UIImage(named: want.imageName)!)
-//}
-//
+/* ForEach(UserStore().wants, id: \.self) { want in
+    Text( want.title)
+   Image(uiImage: UIImage(named: want.imageName)!)
+//} */
+
 //UserStore().wants.append(Want(title: "", imageName: ""))
