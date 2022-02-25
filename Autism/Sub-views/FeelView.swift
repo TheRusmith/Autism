@@ -40,33 +40,26 @@ struct FeelView: View {
 
                     NavigationView {
                         ScrollView(.vertical) {
-                            LazyVStack(alignment: .leading, spacing: 30) {
-//                                ForEach(UserStore().wants,id: \.self) { want in
-//
-//                                    CardModel(title: want.title,image: want.imageName)
-//                                    // TO DO NAVIGATION LINK TO THE APPROPRIATE INTERFACE
-//
-                                    
+                            VStack(alignment: .leading, spacing: 20) {
+                                ForEach(UserStore().wants,id: \.self) { want in
+
+                                    NavigationLink(destination: HomeView()) {
+                                           CardModel(title: want.title,image: want.imageName)
+                                           
+                             }
+                                           
+                                
+                             
+                             
+                             
+                            }
+
                                     }
-                           
-                
-                                 
-                                    ForEach(UserStore().wants,id: \.self) { want in
-//                                        NavigationLink(destination : destination: destination() ,selection: $selection)
-                                        NavigationLink(destination: HomeView()) {
-                                               CardModel(title: want.title,image: want.imageName)
-                                               
-                                 }
-                                               
-                                    
-                                 
-                                 
-                                 
-                                }
+                            
                             }
                             .padding(.top, 10)
                             .padding(.bottom, 20)
-                        }
+                    }
                         
                     }
                     
