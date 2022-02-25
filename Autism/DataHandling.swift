@@ -57,11 +57,12 @@ var InterfacesWant = Interface(Name: "want",vettCard: [Card]())
 class MyInterface {
     
 }
-var message = [String]()
-func addMessage(text:  String) {
-    
-    message.append(text)
-}
+//var message = [String]()
+//var messages = ["fox","tired","dog"]
+//func addMessage(text:  String) {
+//    
+//    messages.append(text)
+//}
 
 
 

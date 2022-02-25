@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct BarView: View {
-    @EnvironmentObject  var userStore: UserStore
+    @State var messages = ["fox","tired"]
+//    @EnvironmentObject  var userStore: UserStore
     var body: some View {
      
                 ZStack{
@@ -21,9 +22,22 @@ struct BarView: View {
                             .frame(width: 300, height: 132, alignment: .center)
                             .padding(.top, 48)
                             .opacity(0.4)
+                        
+                            .font(.title)
                             .overlay {
-                                Text("qui devono apparire le cards")
-                                    .font(.title)
+                                HStack{
+                                    ScrollView(.horizontal) {
+
+                                      //BUG APPARE SOLO ULTIMA CARD
+                                        ForEach(messages,id: \.self) { message in
+                                            SmallcardImage(image: message)
+                                        }
+                                    }
+                                    
+                                }
+
+                            
+                               
                             }
                         Rectangle()
                                 .frame(width: 2, height: 90, alignment: .center)
@@ -43,6 +57,6 @@ struct BarView: View {
 struct BarView_Previews: PreviewProvider {
     static var previews: some View {
         BarView()
-            .environmentObject(UserStore())
+         //   .environmentObject(UserStore())
     }
 }

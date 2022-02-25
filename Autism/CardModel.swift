@@ -36,7 +36,7 @@ struct CardModel: View {
                         .foregroundColor(.white)
                         .padding(.leading, 120)
                 }
-                      Image("fox")
+                      Image(image)
                           .resizable()
                           .scaledToFit()
                           .cornerRadius(20)
