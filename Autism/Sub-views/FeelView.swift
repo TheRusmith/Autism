@@ -8,26 +8,24 @@ import SwiftUI
 struct FeelView: View {
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
-
+        
         VStack{
             BarView()
             NavigationView{
-                ScrollView(.vertical){
+                ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
-                        
                         ForEach(UserStore().wants,id: \.self) { want in
                             NavigationLink(destination: HomeView()) {
                                 CardModel(title: want.title,image: want.imageName)
                             }
                         }
-                        }
                     }
-                    .navigationBarHidden(true)
                 }
+                .navigationBarHidden(true)
             }
-            .ignoresSafeArea()
-
-            .navigationBarHidden(true)
+        }
+        .ignoresSafeArea()
+        .navigationBarHidden(true)
     }
 }
 struct FeelView_Previews: PreviewProvider {
