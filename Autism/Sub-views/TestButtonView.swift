@@ -12,9 +12,7 @@ struct TestButtonView: View {
     var body: some View {
         NavigationView {
                 VStack{
-                    
-
- 
+                
                                     Button(action: {
                                         speechService.say("i feel ")
                                     }, label: {
