@@ -29,6 +29,7 @@
 		5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */; };
 		5A433C0F27C389A3007E7869 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0E27C389A3007E7869 /* Category.swift */; };
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
+		5A861BC027C8D227004EC3DA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BBF27C8D227004EC3DA /* BarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardImage.swift; sourceTree = "<group>"; };
 		5A433C0E27C389A3007E7869 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		5A861BBF27C8D227004EC3DA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
 				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 				5A0F852027BE3D89004592D9 /* FavView.swift */,
+				5A861BBF27C8D227004EC3DA /* BarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,
+				5A861BC027C8D227004EC3DA /* BarView.swift in Sources */,
 				2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */,
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,

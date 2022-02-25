@@ -8,48 +8,87 @@
 import SwiftUI
 
 struct FeelView: View {
-    
+    @EnvironmentObject  var userStore: UserStore
     var body: some View {
      
-
-        NavigationView{
             VStack{
-                ZStack{
- //                 UserStore().wants.append(Want(title: "", imageName: ""))
-                 /*   ForEach(UserStore().wants,id: \.self) {
-                       CardModel(title: $0.title ,image: $0.imageName )
-                    //    Text("\($0.title)…")
-                    } */
-                    
-                    Rectangle()
-                        .frame(width: 414, height: 180, alignment: .center)
-                        .foregroundColor(Color.red)
-                        .shadow(radius: 15)
-                    HStack{
-                        Rectangle()
-                            .frame(width: 300, height: 132, alignment: .center)
-                            .padding(.top, 48)
-                            .opacity(0.4)
-                            .overlay {
-                                Text("qui devono apparire le cards")
-                                    .font(.title)
-                            }
-                        Rectangle()
-                                .frame(width: 2, height: 90, alignment: .center)
-                                .padding(.top, 40)
-                       Image("arrow")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80, alignment: .center)
-                            .padding(.top, 40)
-                        Spacer()
+                NavigationView{
+                    ScrollView(.vertical){
+                        LazyVStack(alignment: . center, spacing: 30) {
+                        
+                                ZStack{
+                    //                  ForEach(UserStore().wants,id: \.self) { want in
+                                Rectangle()
+                                    .frame(width: 320, height: 110, alignment: .center)
+                                    .cornerRadius(20)
+                                    .foregroundColor(.red)
+                                    .shadow(radius: 5)
+                                    .overlay {
+                                        Text("Name")
+                                            .font(.largeTitle)
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(.white)
+                                            .padding(.leading, 120)
+                                    }
+                                          Image("fox")
+                                              .resizable()
+                                              .scaledToFit()
+                                              .cornerRadius(20)
+                                              .frame(width: 130, height: 110, alignment: .center)
+                                              .padding(.trailing, 210)
+                                      }
+                            
+                                ZStack{
+                    //                  ForEach(UserStore().wants,id: \.self) { want in
+                                Rectangle()
+                                    .frame(width: 320, height: 110, alignment: .center)
+                                    .cornerRadius(20)
+                                    .foregroundColor(.red)
+                                    .shadow(radius: 5)
+                                    .overlay {
+                                        Text("Name")
+                                            .font(.largeTitle)
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(.white)
+                                            .padding(.leading, 120)
+                                    }
+                                          Image("fox")
+                                              .resizable()
+                                              .scaledToFit()
+                                              .cornerRadius(20)
+                                              .frame(width: 130, height: 110, alignment: .center)
+                                              .padding(.trailing, 210)
+                                      }
+                                
+                            ZStack{
+                //                  ForEach(UserStore().wants,id: \.self) { want in
+                            Rectangle()
+                                .frame(width: 320, height: 110, alignment: .center)
+                                .cornerRadius(20)
+                                .foregroundColor(.red)
+                                .shadow(radius: 5)
+                                .overlay {
+                                    Text("Name")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                        .padding(.leading, 120)
+                                }
+                                      Image("fox")
+                                          .resizable()
+                                          .scaledToFit()
+                                          .cornerRadius(20)
+                                          .frame(width: 130, height: 110, alignment: .center)
+                                          .padding(.trailing, 210)
+                                  }
+                        }
                     }
+                    .navigationBarHidden(true)
                 }
-                Spacer()
             }
             .ignoresSafeArea()
-        }
-        .navigationBarHidden(true)
+            
+            .navigationBarHidden(true)
     }
 }
 struct FeelView_Previews: PreviewProvider {
