@@ -25,7 +25,7 @@ struct CardModel: View {
                     
                    
             Rectangle()
-                .frame(width: 320, height: 110, alignment: .center)
+                .frame(width: 320, height: 90, alignment: .center)
                 .cornerRadius(20)
                 .foregroundColor(.red)
                 .shadow(radius: 5)
@@ -40,8 +40,8 @@ struct CardModel: View {
                           .resizable()
                           .scaledToFit()
                           .cornerRadius(20)
-                          .frame(width: 130, height: 110, alignment: .center)
-                          .padding(.trailing, 210)
+                          .frame(width: 90, height: 90, alignment: .center)
+                          .padding(.trailing, 230)
                   }
             }
         }

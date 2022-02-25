@@ -14,15 +14,29 @@ class UserStore: ObservableObject, Identifiable {
     @Published var level2: Level2? = nil
     @Published var level3: Level3? = nil
     
-    @Published var feels: [Feel] = [Feel(title: "test1", imageName: "fox")]
-    @Published var wants: [Want] = [Want(title: "Cane",imageName: "fox"),
-                                    Want(title:"Gatto",imageName: "fox"),
-                                    Want(title:"Cane",imageName: "fox"),
-                                    Want(title:"Pappagallo",imageName: "fox")]
+    @Published var feels: [Feel] = [Feel(title: "Happy", imageName: "fox"),
+                                    Feel(title: "Tired", imageName: "fox"),
+                                    Feel(title: "Sick", imageName: "fox"),
+                                    Feel(title: "Angry", imageName: "fox"),
+                                    Feel(title: "Sad", imageName: "fox")]
+    
+    @Published var wants: [Want] = [Want(title: "Eat",imageName: "fox"),
+                                    Want(title:"Drink",imageName: "fox"),
+                                    Want(title:"Play",imageName: "fox"),
+                                    Want(title:"Go",imageName: "fox")]
+    
     @Published var wantplay: [WantPlay] = []
-    @Published var wanteat: [WantEat] = []
+    
+    @Published var wanteat: [WantEat] = [WantEat(title: "Burger",imageName: "fox"),
+                                         WantEat(title:"Pizza",imageName: "fox"),
+                                         WantEat(title:"Ice Cream",imageName: "fox"),
+                                         WantEat(title:"Chips",imageName: "fox"),
+                                         WantEat(title:"Chocolate",imageName: "fox")]
+    
     @Published var wantdrink : [WantDrink] = []
+    
     @Published var wantgo : [WantGo] = []
+    
     @Published var wantpeople : [WantPeople] = []
    
     
