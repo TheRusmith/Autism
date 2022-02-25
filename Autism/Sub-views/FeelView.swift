@@ -11,8 +11,7 @@ struct FeelView: View {
         
         VStack{
             BarView()
-                .padding()
-            
+                .padding(.top, 21)
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
@@ -22,7 +21,7 @@ struct FeelView: View {
                             }
                         }
                     }
-                    .padding(.top, 10)
+                    .padding(.top, 9)
                 }
                 .navigationBarHidden(true)
             }
