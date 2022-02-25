@@ -63,7 +63,6 @@ struct HomeView: View {
 //                .opacity(0)   // Rettangolo immaginario (megli di .padding)
             
             VStack{
-//                
                 Spacer()
                 
                 Button(action: {
@@ -90,54 +89,47 @@ struct HomeView: View {
                                     .fontWeight(.semibold)
                                     .multilineTextAlignment(.center)
                                 
-                           //     Spacer()
-                            }
-                        )
-                }
-                )
-            }
-            )
-            Spacer()
-            
+                                Spacer()
+                            })
+                })
+            })
+                Spacer()
+                
                 Button(action: {
                     speechService.say("i feel ")
                 }, label: {
                     NavigationLink(destination: FeelView(),  label: {
-                    Rectangle()
-                        .cornerRadius(15)
-                        .shadow(radius: 10)
-                        .frame(width: 190, height: 170)
-                        .foregroundColor(.white)
-                        .overlay(
-                            VStack{
-                            Image("feel")
-                                .resizable()
-                                .scaledToFit()
-                                .aspectRatio(0.85, contentMode: .fit)
-                                .frame(width: 200, height: 140)
-                                
-                                Spacer()
-                                
-                                Text("I feel...")
-                                    .foregroundColor(.black)
-                                    .fontWeight(.semibold)
-                                    .multilineTextAlignment(.center)
-                                
-                                Spacer()
-                            }
-                        )
-                }
-                )
-            }
-            )
+                        Rectangle()
+                            .cornerRadius(15)
+                            .shadow(radius: 10)
+                            .frame(width: 190, height: 170)
+                            .foregroundColor(.white)
+                            .overlay(
+                                VStack{
+                                    Image("feel")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .aspectRatio(0.85, contentMode: .fit)
+                                        .frame(width: 200, height: 140)
+                                    
+                                    Spacer()
+                                    
+                                    Text("I feel...")
+                                        .foregroundColor(.black)
+                                        .fontWeight(.semibold)
+                                        .multilineTextAlignment(.center)
+                                    Spacer()
+                                })
+                    })
+                })
                 Spacer()
             }
         }
         .ignoresSafeArea()
-        }
+    }
     .navigationBarHidden(true)
     }
-    }
+}
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()

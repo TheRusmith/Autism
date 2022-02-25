@@ -20,7 +20,6 @@ struct CardModel: View {
 
     var body: some View {
         VStack{
-            
             ZStack{
                   
                     
@@ -37,13 +36,12 @@ struct CardModel: View {
                         .foregroundColor(.white)
                         .padding(.leading, 120)
                 }
-                
-                Image(image)
-                    .resizable()
-                    .frame(width: 130, height: 110, alignment: .center)
-                    .scaledToFill()
-                .cornerRadius(20)
-                    .padding(.trailing, 190)
+                      Image("fox")
+                          .resizable()
+                          .scaledToFit()
+                          .cornerRadius(20)
+                          .frame(width: 130, height: 110, alignment: .center)
+                          .padding(.trailing, 210)
                   }
             }
         }
