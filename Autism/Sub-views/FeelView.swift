@@ -4,7 +4,6 @@
 //
 //  Created by Mariano Piscitelli on 17/02/22.
 //
-
 import SwiftUI
 
 struct FeelView: View {
@@ -12,7 +11,9 @@ struct FeelView: View {
     let speechservice = SpeechService()
 
     var body: some View {
-     
+        
+
+//        NavigationView{
             VStack{
                 
                HStack{
@@ -67,72 +68,6 @@ struct FeelView: View {
                             .padding(.bottom, 20)
                         }
                         
-                                ZStack{
-                    //                  ForEach(UserStore().wants,id: \.self) { want in
-                                Rectangle()
-                                    .frame(width: 320, height: 110, alignment: .center)
-                                    .cornerRadius(20)
-                                    .foregroundColor(.red)
-                                    .shadow(radius: 5)
-                                    .overlay {
-                                        Text("Name")
-                                            .font(.largeTitle)
-                                            .fontWeight(.semibold)
-                                            .foregroundColor(.white)
-                                            .padding(.leading, 120)
-                                    }
-                                          Image("fox")
-                                              .resizable()
-                                              .scaledToFit()
-                                              .cornerRadius(20)
-                                              .frame(width: 130, height: 110, alignment: .center)
-                                              .padding(.trailing, 210)
-                                      }
-                            
-                                ZStack{
-                    //                  ForEach(UserStore().wants,id: \.self) { want in
-                                Rectangle()
-                                    .frame(width: 320, height: 110, alignment: .center)
-                                    .cornerRadius(20)
-                                    .foregroundColor(.red)
-                                    .shadow(radius: 5)
-                                    .overlay {
-                                        Text("Name")
-                                            .font(.largeTitle)
-                                            .fontWeight(.semibold)
-                                            .foregroundColor(.white)
-                                            .padding(.leading, 120)
-                                    }
-                                          Image("fox")
-                                              .resizable()
-                                              .scaledToFit()
-                                              .cornerRadius(20)
-                                              .frame(width: 130, height: 110, alignment: .center)
-                                              .padding(.trailing, 210)
-                                      }
-                                
-                            ZStack{
-                //                  ForEach(UserStore().wants,id: \.self) { want in
-                            Rectangle()
-                                .frame(width: 320, height: 110, alignment: .center)
-                                .cornerRadius(20)
-                                .foregroundColor(.red)
-                                .shadow(radius: 5)
-                                .overlay {
-                                    Text("Name")
-                                        .font(.largeTitle)
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(.white)
-                                        .padding(.leading, 120)
-                                }
-                                      Image("fox")
-                                          .resizable()
-                                          .scaledToFit()
-                                          .cornerRadius(20)
-                                          .frame(width: 130, height: 110, alignment: .center)
-                                          .padding(.trailing, 210)
-                                  }
-                        }
                     }
                     
                 }
@@ -152,3 +87,5 @@ struct FeelView_Previews: PreviewProvider {
             .environmentObject(UserStore())
     }
 }
+
+
