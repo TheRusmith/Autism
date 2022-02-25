@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2626625D27C8CA4000BCD55B /* WantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626625C27C8CA4000BCD55B /* WantView.swift */; };
+		2626625F27C8D33100BCD55B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626625E27C8D33100BCD55B /* ViewModel.swift */; };
 		2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C527BE50B6006A13E5 /* ImagePicker.swift */; };
 		2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C727BE50EF006A13E5 /* Image&Extension.swift */; };
 		2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C927BE511D006A13E5 /* Audio.swift */; };
 		2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7CB27BE5161006A13E5 /* DataHandling.swift */; };
 		2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7D127BE64D7006A13E5 /* SpeechService.swift */; };
 		2694F13827C4E9720063111C /* DataInizialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694F13727C4E9720063111C /* DataInizialization.swift */; };
-		2694F13A27C626790063111C /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694F13927C626790063111C /* UserStorage.swift */; };
 		5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F850927BCEBE9004592D9 /* AutismApp.swift */; };
 		5A0F850E27BCEBEA004592D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F850D27BCEBEA004592D9 /* Assets.xcassets */; };
 		5A0F851127BCEBEA004592D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */; };
@@ -32,13 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2626625C27C8CA4000BCD55B /* WantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantView.swift; sourceTree = "<group>"; };
+		2626625E27C8D33100BCD55B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2678D7C527BE50B6006A13E5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2678D7C727BE50EF006A13E5 /* Image&Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image&Extension.swift"; sourceTree = "<group>"; };
 		2678D7C927BE511D006A13E5 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2678D7CB27BE5161006A13E5 /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
 		2678D7D127BE64D7006A13E5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		2694F13727C4E9720063111C /* DataInizialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInizialization.swift; sourceTree = "<group>"; };
-		2694F13927C626790063111C /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		5A0F850627BCEBE9004592D9 /* Autism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F850927BCEBE9004592D9 /* AutismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutismApp.swift; sourceTree = "<group>"; };
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,9 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26266CAD27C6434500F6BD84 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		5A0F84FD27BCEBE9004592D9 = {
 			isa = PBXGroup;
 			children = (
+				26266CAD27C6434500F6BD84 /* Audio */,
 				5A0F850827BCEBE9004592D9 /* Autism */,
 				5A0F850727BCEBE9004592D9 /* Products */,
 			);
@@ -89,12 +99,12 @@
 			children = (
 				5A0F850927BCEBE9004592D9 /* AutismApp.swift */,
 				5A0F851C27BE3D6E004592D9 /* NavigationView.swift */,
-				2678D7D127BE64D7006A13E5 /* SpeechService.swift */,
 				2678D7C527BE50B6006A13E5 /* ImagePicker.swift */,
 				2678D7C727BE50EF006A13E5 /* Image&Extension.swift */,
 				2678D7C927BE511D006A13E5 /* Audio.swift */,
 				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
 				5A0F853327BFAAF5004592D9 /* CardModel.swift */,
+				2626625E27C8D33100BCD55B /* ViewModel.swift */,
 				5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */,
 				5A0F852627BE3DEE004592D9 /* Views */,
 				5A0F852B27BEB193004592D9 /* Sub-views */,
@@ -130,6 +140,7 @@
 			children = (
 				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
 				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
+				2626625C27C8CA4000BCD55B /* WantView.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
@@ -137,9 +148,9 @@
 		5A433C0D27C38984007E7869 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				2678D7D127BE64D7006A13E5 /* SpeechService.swift */,
 				5A433C0E27C389A3007E7869 /* Category.swift */,
 				2694F13727C4E9720063111C /* DataInizialization.swift */,
-				2694F13927C626790063111C /* UserStorage.swift */,
 				5A433C1227C38A23007E7869 /* UserStore.swift */,
 			);
 			path = DataModel;
@@ -219,7 +230,6 @@
 				5A433C1327C38A23007E7869 /* UserStore.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
-				2694F13A27C626790063111C /* UserStorage.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
 				5A0F853427BFAAF5004592D9 /* CardModel.swift in Sources */,
 				5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */,
@@ -229,7 +239,9 @@
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A433C0F27C389A3007E7869 /* Category.swift in Sources */,
+				2626625F27C8D33100BCD55B /* ViewModel.swift in Sources */,
 				5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */,
+				2626625D27C8CA4000BCD55B /* WantView.swift in Sources */,
 				2694F13827C4E9720063111C /* DataInizialization.swift in Sources */,
 				2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */,
 				5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */,

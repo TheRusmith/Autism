@@ -8,49 +8,79 @@
 import SwiftUI
 
 struct FeelView: View {
-    
-    var body: some View {
-     
+    @EnvironmentObject  var userStore: UserStore
+    let speechservice = SpeechService()
 
-        NavigationView{
+    var body: some View {
+        
+
+//        NavigationView{
             VStack{
-                ZStack{
- //                 UserStore().wants.append(Want(title: "", imageName: ""))
-                 /*   ForEach(UserStore().wants,id: \.self) {
-                       CardModel(title: $0.title ,image: $0.imageName )
-                    //    Text("\($0.title)…")
-                    } */
-                    
+                
+               HStack{
+
                     Rectangle()
-                        .frame(width: 414, height: 180, alignment: .center)
-                        .foregroundColor(Color.red)
-                        .shadow(radius: 15)
-                    HStack{
-                        Rectangle()
-                            .frame(width: 300, height: 132, alignment: .center)
-                            .padding(.top, 48)
-                            .opacity(0.4)
-                            .overlay {
-                                Text("qui devono apparire le cards")
-                                    .font(.title)
-                            }
-                        Rectangle()
-                                .frame(width: 2, height: 90, alignment: .center)
-                                .padding(.top, 40)
-                       Image("arrow")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80, alignment: .center)
-                            .padding(.top, 40)
-                        Spacer()
-                    }
+                        .frame(width: 300, height: 10, alignment: .top)
+                        .background(Color.red)
+                        .padding(.top, 48)
+                        .ignoresSafeArea()
+                        .overlay {
+                            Text("I feel ")
+                                .font(.title)
+                        }
+
+                   Image("arrow")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80, alignment: .top)
+                        .padding(.top, 40)
+                    Spacer()
                 }
-                Spacer()
-            }
+                 
+                HStack{
+
+                    NavigationView {
+                        ScrollView(.vertical) {
+                            LazyVStack(alignment: .leading, spacing: 30) {
+//                                ForEach(UserStore().wants,id: \.self) { want in
+//
+//                                    CardModel(title: want.title,image: want.imageName)
+//                                    // TO DO NAVIGATION LINK TO THE APPROPRIATE INTERFACE
+//
+                                    
+                                    }
+                           
+                
+                                 
+                                    ForEach(UserStore().wants,id: \.self) { want in
+//                                        NavigationLink(destination : destination: destination() ,selection: $selection)
+                                        NavigationLink(destination: HomeView()) {
+                                               CardModel(title: want.title,image: want.imageName)
+                                               
+                                 }
+                                               
+                                    
+                                 
+                                 
+                                 
+                                }
+                            }
+                            .padding(.top, 10)
+                            .padding(.bottom, 20)
+                        }
+                        
+                    }
+                    
+                }
+                 Spacer()
+         .onAppear {
+            speechservice.say("Mi sento ")
+        }
             .ignoresSafeArea()
         }
-        .navigationBarHidden(true)
-    }
+        
+    
+
 }
 struct FeelView_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,25 +13,8 @@ struct TestButtonView: View {
         NavigationView {
                 VStack{
                     
-//          Button("Done", action: {
-//          speechService.say("i feel ")
-//            })
-//                   Text("it doesn't work")
-//
-//                   Button(action: {
-//                       speechService.say("i feel")
-//                       FeelView()
-//                   }, label: {
-//                       Text("fox")
-//                   })
-//
-//           }
-//       }
-//    }
-//}
-//                    Button("Done", action: {
-//                    speechService.say("i feel ")
-//                })
+
+ 
                                     Button(action: {
                                         speechService.say("i feel ")
                                     }, label: {

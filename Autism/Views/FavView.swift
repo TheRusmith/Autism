@@ -21,20 +21,8 @@ struct FavView: View {
                        }
                    }
                }
-
-
-   /*     override func viewDidAppear( _ animated : Bool) {
-            super.viewDidApperar(animated)
-            speechService.say("hello man")
-        } */
-        /*
-        HStack {
-            Text("Hello, World!")
-        }
-
-        
-        */
     }
+    
 }
 
 struct FavView_Previews: PreviewProvider {

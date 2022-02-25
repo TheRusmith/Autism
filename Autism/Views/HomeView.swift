@@ -90,7 +90,7 @@ struct HomeView: View {
                                     .fontWeight(.semibold)
                                     .multilineTextAlignment(.center)
                                 
-                                Spacer()
+                           //     Spacer()
                             }
                         )
                 }
