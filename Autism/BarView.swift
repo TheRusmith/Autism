@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BarView: View {
-    @State var messages = ["fox","tired"]
+    @State var messages = ["fox","tired","angry"]
 //    @EnvironmentObject  var userStore: UserStore
     var body: some View {
      
@@ -21,24 +21,24 @@ struct BarView: View {
                         Rectangle()
                             .frame(width: 300, height: 132, alignment: .center)
                             .padding(.top, 48)
-                            .opacity(0.4)
-                        
+                            .opacity(0)
                             .font(.title)
                             .overlay {
-                                HStack{
-                                    ScrollView(.horizontal) {
-
+                                ScrollView(.horizontal) {
+                                    HStack {
                                       //BUG APPARE SOLO ULTIMA CARD
                                         ForEach(messages,id: \.self) { message in
                                             SmallcardImage(image: message)
+                                            Image(systemName: "arrow.right")
+                                                .font(.system(size: 30.0, weight: .bold))
                                         }
                                     }
+                                    .padding(.leading, 10)
                                     
                                 }
-
-                            
-                               
+                                .padding(.top, 40)
                             }
+                        
                         Rectangle()
                                 .frame(width: 2, height: 90, alignment: .center)
                                 .padding(.top, 40)
