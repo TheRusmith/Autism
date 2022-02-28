@@ -1,23 +1,21 @@
 //
-//  FeelView.swift
+//  EatView.swift
 //  Autism
 //
-//  Created by Mariano Piscitelli on 17/02/22.
-
+//  Created by Emanuele Bosco on 28/02/22.
+//
 import SwiftUI
-struct FeelView: View {
+struct WantEatView: View {
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
         
         VStack{
-            BarView()
-                .padding(.top, 21)
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
-                        ForEach(UserStore().feels,id: \.self) { feel in
+                        ForEach(UserStore().wanteat,id: \.self) { WantEat in
                             NavigationLink(destination: HomeView()) {
-                                CardModel(title: feel.title,image: feel.imageName)
+                                CardModel(title: WantEat.title,image: WantEat.imageName)
                             }
                         }
                     }
@@ -32,9 +30,9 @@ struct FeelView: View {
         .navigationBarHidden(true)
     }
 }
-struct FeelView_Previews: PreviewProvider {
+struct WantEatView_Previews: PreviewProvider {
     static var previews: some View {
-        FeelView()
+        WantEatView()
             .environmentObject(UserStore())
     }
 }

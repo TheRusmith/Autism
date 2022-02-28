@@ -68,7 +68,7 @@ struct HomeView: View {
                 Button(action: {
                     speechService.say("i feel ")
                 }, label: {
-                    NavigationLink(destination: FeelView(),  label: {
+                    NavigationLink(destination: WantView(),  label: {
                     Rectangle()
                         .cornerRadius(15)
                         .shadow(radius: 10)
