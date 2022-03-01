@@ -31,6 +31,7 @@
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
 		5A861BC027C8D227004EC3DA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BBF27C8D227004EC3DA /* BarView.swift */; };
 		C1C639F627CCC44200A4B2D2 /* WantEatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F527CCC44200A4B2D2 /* WantEatView.swift */; };
+		C1C639FA27CCDE1D00A4B2D2 /* WantDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		5A861BBF27C8D227004EC3DA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		C1C639F527CCC44200A4B2D2 /* WantEatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantEatView.swift; sourceTree = "<group>"; };
+		C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantDrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
 				2626625C27C8CA4000BCD55B /* WantView.swift */,
 				C1C639F527CCC44200A4B2D2 /* WantEatView.swift */,
+				C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
 				5A0F853427BFAAF5004592D9 /* CardModel.swift in Sources */,
+				C1C639FA27CCDE1D00A4B2D2 /* WantDrinkView.swift in Sources */,
 				5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,

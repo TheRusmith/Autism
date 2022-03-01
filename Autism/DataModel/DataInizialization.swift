@@ -40,3 +40,8 @@ var hr = Want(title: "fff",imageName: "errr")
 
 //TO DO INITIALIZE THE STRUCT
 //UserStore().wants.append(Want(title: "", imageName: ""))
+
+struct Needs: Hashable {
+    var title: String
+    var imageName: String
+}

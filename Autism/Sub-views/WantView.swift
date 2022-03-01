@@ -12,6 +12,20 @@ struct WantView: View {
         VStack{
             BarView()
                 .padding(.top, 21)
+     /*
+             VStack {
+                 List(UserStore().wants.indices, id: \.self) { index in
+                     NavigationLink(destination:
+             CardModel(title : want.title.index,image: want.title.imageName)) {
+                         HStack {
+                             Text(wants[index].name)
+                         }
+                     }
+                 }
+             }
+             
+*/
+             
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {

@@ -33,13 +33,14 @@ class UserStore: ObservableObject, Identifiable {
                                          WantEat(title:"Chips",imageName: "fox"),
                                          WantEat(title:"Chocolate",imageName: "fox")]
     
-    @Published var wantdrink : [WantDrink] = []
-    
+    @Published var wantdrink : [WantDrink] = [WantDrink(title: "Water", imageName: "acqua"),
+                                              WantDrink(title: "CocaCola", imageName: "cocacola"),
+                                              WantDrink(title: "Milk", imageName: "lattescremato")]
     @Published var wantgo : [WantGo] = []
     
     @Published var wantpeople : [WantPeople] = []
    
-    
+    @Published var needs = []
    
     //wants.insert(Want(title: "brividi ", imageName: "photo")
    //var wants = [Want(title: "Cane",imageName: "photo")]
