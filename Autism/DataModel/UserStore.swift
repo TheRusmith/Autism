@@ -79,3 +79,4 @@ func appendWants(title: String ,imageName: String) {
    Image(uiImage: UIImage(named: want.imageName)!)
 //} */
 
+

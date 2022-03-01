@@ -36,3 +36,4 @@ struct WantEatView_Previews: PreviewProvider {
             .environmentObject(UserStore())
     }
 }
+//ciao
