@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26062F8B27CE0B480075AA85 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26062F8A27CE0B480075AA85 /* ViewModel.swift */; };
 		2626625D27C8CA4000BCD55B /* WantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626625C27C8CA4000BCD55B /* WantView.swift */; };
 		2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C527BE50B6006A13E5 /* ImagePicker.swift */; };
 		2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C727BE50EF006A13E5 /* Image&Extension.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26062F8A27CE0B480075AA85 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2626625C27C8CA4000BCD55B /* WantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantView.swift; sourceTree = "<group>"; };
 		2678D7C527BE50B6006A13E5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2678D7C727BE50EF006A13E5 /* Image&Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image&Extension.swift"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		26266CAD27C6434500F6BD84 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				2678D7C927BE511D006A13E5 /* Audio.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -101,11 +104,11 @@
 				5A0F851C27BE3D6E004592D9 /* NavigationView.swift */,
 				2678D7C527BE50B6006A13E5 /* ImagePicker.swift */,
 				2678D7C727BE50EF006A13E5 /* Image&Extension.swift */,
-				2678D7C927BE511D006A13E5 /* Audio.swift */,
-				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
 				5A0F853327BFAAF5004592D9 /* CardModel.swift */,
 				5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */,
 				5A861BBF27C8D227004EC3DA /* BarView.swift */,
+				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
+				26062F8A27CE0B480075AA85 /* ViewModel.swift */,
 				5A0F852627BE3DEE004592D9 /* Views */,
 				5A0F852B27BEB193004592D9 /* Sub-views */,
 				5A433C0D27C38984007E7869 /* DataModel */,
@@ -240,6 +243,7 @@
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A433C0F27C389A3007E7869 /* Category.swift in Sources */,
+				26062F8B27CE0B480075AA85 /* ViewModel.swift in Sources */,
 				5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */,
 				2626625D27C8CA4000BCD55B /* WantView.swift in Sources */,
 				2694F13827C4E9720063111C /* DataInizialization.swift in Sources */,
@@ -377,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Autism/Preview Content\"";
-				DEVELOPMENT_TEAM = SD5XL5AQ2L;
+				DEVELOPMENT_TEAM = H7CC5LFW5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -407,7 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Autism/Preview Content\"";
-				DEVELOPMENT_TEAM = SD5XL5AQ2L;
+				DEVELOPMENT_TEAM = H7CC5LFW5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

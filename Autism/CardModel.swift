@@ -27,7 +27,7 @@ struct CardModel: View {
             Rectangle()
                 .frame(width: 320, height: 90, alignment: .center)
                 .cornerRadius(20)
-                .foregroundColor(.red)
+                .foregroundColor(.random())
                 .shadow(radius: 5)
                 .overlay {
                     Text(title)
@@ -37,6 +37,7 @@ struct CardModel: View {
                         .padding(.leading, 120)
                 }
                       Image(image)
+                    
                           .resizable()
                           .scaledToFit()
                           .cornerRadius(20)

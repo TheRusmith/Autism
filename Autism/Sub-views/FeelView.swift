@@ -7,14 +7,21 @@
 import SwiftUI
 struct FeelView: View {
     @EnvironmentObject  var userStore: UserStore
+//    @Binding var messages: [String]
+//    @EnvironmentObject var message : MessageData
+    let speechService = SpeechService()
     var body: some View {
         
         VStack{
+//            userStore.appendWants(title: "scarafaggio", imageName: "angry")
+            
             BarView()
                 .padding(.top, 21)
+//            UserStore().appendText(step: "cane")
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
+                        
                         ForEach(UserStore().wants,id: \.self) { want in
                             NavigationLink(destination: HomeView()) {
                                 CardModel(title: want.title,image: want.imageName)
@@ -30,6 +37,12 @@ struct FeelView: View {
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
+        .onAppear {
+            speechService.say("I feel")
+//            UserStore().appendText(step: "iwant")
+              appendStep(step: "iwant")
+            
+        }
     }
 }
 struct FeelView_Previews: PreviewProvider {

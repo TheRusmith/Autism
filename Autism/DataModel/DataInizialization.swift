@@ -38,5 +38,11 @@ struct WantPeople : Level2,Hashable {
 var hr = Want(title: "fff",imageName: "errr")
 //UserStore().wants.append(Want(title: "", imageName: ""))
 
-//TO DO INITIALIZE THE STRUCT
-//UserStore().wants.append(Want(title: "", imageName: ""))
+
+
+//extension color in a range of color
+extension Color {
+    static func random() -> Color {
+        return Color(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
+    }
+}

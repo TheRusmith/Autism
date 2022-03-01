@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-
-class UserStore: ObservableObject, Identifiable {
+import SwiftUI
+class UserStore: NSObject,ObservableObject, Identifiable  {
     @Published var category: Category? = nil
     @Published var level1: Level1? = nil
     @Published var level2: Level2? = nil
@@ -38,43 +38,50 @@ class UserStore: ObservableObject, Identifiable {
     @Published var wantgo : [WantGo] = []
     
     @Published var wantpeople : [WantPeople] = []
-   
+    //In app text message
     
-   
-    //wants.insert(Want(title: "brividi ", imageName: "photo")
-   //var wants = [Want(title: "Cane",imageName: "photo")]
-}
-
-class testData : ObservableObject, Identifiable {
-    @Published var title : String
-    @Published var image : String
-    
-    init(title : String, image : String) {
-        self.title = title
-        self.image = image
+    @Published var messages = [String]()
+    func appendWants(title: String ,imageName: String) {
+        UserStore().wants.append(Want(title: title, imageName: imageName))
     }
     
     
+    func appendText(step: String) {
+        messages.append(step)
+    }
+    func deleteText() {
+        messages.removeLast()
+    }
+    
 }
 
 
-var want : [testData] = [
-testData(title: "Cane", image: "Gatto")
-]
+var messages2 = [String]()
+    func appendStep (step : String)  {
+        messages2.append(step)
+    }
+
+    func deleteStep () {
+        messages2.removeLast()
+    }
 
 
 
-
-//feels = [Want1,Want2]
-
-func appendWants(title: String ,imageName: String) {
-    UserStore().wants.append(Want(title: title, imageName: imageName))
+var ChooseFriend = ["dog","fox","cat","tex"]
+enum chosenFriend {
+    case dog
+    case fox
+    case cat
+    case tex
 }
+var choosen = chosenFriend.dog
+var choosen2 = chosenFriend.cat
 
-//Image(uiImage: UIImage(named: hr.imageName)!)
 
-/* ForEach(UserStore().wants, id: \.self) { want in
-    Text( want.title)
-   Image(uiImage: UIImage(named: want.imageName)!)
-//} */
-
+enum views {
+    case want
+    case wanteat
+    case wantplay
+}
+//NavigationLink(destination: RecipeItemDetailView(recipe: $recipeArray[index]))
+//NavigationLink(destination: ChoiceView(selection: $selection[index]))

@@ -16,19 +16,22 @@ struct SmallcardImage: View {
         }
     
     var body: some View {
-        HStack {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 60, height: 60)
-                .cornerRadius(10)
+        VStack {
+            HStack {
+                Image(image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 60, height: 60)
+                    .cornerRadius(10)
+            }
         }
+
 
         }
 }
 
 struct SmallcardImage_Previews: PreviewProvider {
     static var previews: some View {
-        SmallcardImage(image: "fox" )
+        SmallcardImage(image: "sad" )
     }
 }
