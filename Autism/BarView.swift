@@ -28,7 +28,7 @@ struct BarView: View {
                                     HStack {
                                       //BUG APPARE SOLO ULTIMA CARD
                                         ForEach(messages,id: \.self) { message in
-                                            SmallcardImage(image: message)
+                                            SmallcardImage(title: message,image: message)
                                             Image(systemName: "arrow.right")
                                                 .font(.system(size: 30.0, weight: .bold))
                                         }
@@ -36,7 +36,7 @@ struct BarView: View {
                                     .padding(.leading, 10)
                                     
                                 }
-                                .padding(.top, 40)
+                                .padding(.top, 42)
                             }
                         
                         Rectangle()
