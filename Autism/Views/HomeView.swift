@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showSettingsView = false
     let speechService = SpeechService()
     var body: some View {
     NavigationView{
@@ -18,19 +19,27 @@ struct HomeView: View {
                 .frame(width: 280, height: 30)
                 .opacity(0)   // Rettangolo immaginario (megli di .padding)
             HStack{
-            Image("menu")
-                .resizable()
-                .frame(width: 40, height: 40)
-                .padding(.leading, 10)
                 
-            Spacer()
+                Image("menu")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .padding(.leading, 10)
                 
-            Image(systemName: "gearshape")
-                .imageScale(.large)
-                .foregroundColor(Color(UIColor.darkGray))
-                .padding(.trailing, 10)
-                .font(.system(size:25))
-            
+                Spacer()
+                
+                Button {
+                    showSettingsView.toggle()
+                } label: {
+                    Image(systemName: "gearshape")
+                        .imageScale(.large)
+                        .foregroundColor(Color(UIColor.darkGray))
+                        .font(.system(size:25))
+                        .padding(.trailing,5)
+                }
+                .sheet(isPresented: $showSettingsView) {
+                    SettingsView()
+                }
+                
             }
             
             .statusBar(hidden: true)

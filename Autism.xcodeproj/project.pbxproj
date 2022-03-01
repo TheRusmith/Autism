@@ -30,6 +30,7 @@
 		5A433C0F27C389A3007E7869 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0E27C389A3007E7869 /* Category.swift */; };
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
 		5A861BC027C8D227004EC3DA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BBF27C8D227004EC3DA /* BarView.swift */; };
+		5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BC327CCD627004EC3DA /* SettingsView.swift */; };
 		C1C639F627CCC44200A4B2D2 /* WantEatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F527CCC44200A4B2D2 /* WantEatView.swift */; };
 		C1C639FA27CCDE1D00A4B2D2 /* WantDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		5A433C0E27C389A3007E7869 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		5A861BBF27C8D227004EC3DA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		5A861BC327CCD627004EC3DA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C1C639F527CCC44200A4B2D2 /* WantEatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantEatView.swift; sourceTree = "<group>"; };
 		C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantDrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
 				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 				5A0F852027BE3D89004592D9 /* FavView.swift */,
+				5A861BC327CCD627004EC3DA /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */,
+				5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */,
 				5A433C1327C38A23007E7869 /* UserStore.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
