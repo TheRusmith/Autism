@@ -31,6 +31,12 @@
 		5A433C0F27C389A3007E7869 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C0E27C389A3007E7869 /* Category.swift */; };
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
 		5A861BC027C8D227004EC3DA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BBF27C8D227004EC3DA /* BarView.swift */; };
+		5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BC327CCD627004EC3DA /* SettingsView.swift */; };
+		C1A829B427CE16A2007B7077 /* WantPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B327CE16A2007B7077 /* WantPlayView.swift */; };
+		C1A829B627CE1740007B7077 /* WantGoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B527CE1740007B7077 /* WantGoView.swift */; };
+		C1A829B827CE178D007B7077 /* WantPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B727CE178D007B7077 /* WantPeopleView.swift */; };
+		C1C639F627CCC44200A4B2D2 /* WantEatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F527CCC44200A4B2D2 /* WantEatView.swift */; };
+		C1C639FA27CCDE1D00A4B2D2 /* WantDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +65,12 @@
 		5A433C0E27C389A3007E7869 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		5A861BBF27C8D227004EC3DA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		5A861BC327CCD627004EC3DA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C1A829B327CE16A2007B7077 /* WantPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantPlayView.swift; sourceTree = "<group>"; };
+		C1A829B527CE1740007B7077 /* WantGoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantGoView.swift; sourceTree = "<group>"; };
+		C1A829B727CE178D007B7077 /* WantPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantPeopleView.swift; sourceTree = "<group>"; };
+		C1C639F527CCC44200A4B2D2 /* WantEatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantEatView.swift; sourceTree = "<group>"; };
+		C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantDrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,7 @@
 				5A0F851E27BE3D7F004592D9 /* HomeView.swift */,
 				5A0F852227BE3D9B004592D9 /* CreateView.swift */,
 				5A0F852027BE3D89004592D9 /* FavView.swift */,
+				5A861BC327CCD627004EC3DA /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +157,11 @@
 				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
 				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
 				2626625C27C8CA4000BCD55B /* WantView.swift */,
+				C1A829B327CE16A2007B7077 /* WantPlayView.swift */,
+				C1A829B527CE1740007B7077 /* WantGoView.swift */,
+				C1A829B727CE178D007B7077 /* WantPeopleView.swift */,
+				C1C639F527CCC44200A4B2D2 /* WantEatView.swift */,
+				C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
@@ -230,16 +248,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */,
+				C1A829B827CE178D007B7077 /* WantPeopleView.swift in Sources */,
+				5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */,
 				5A433C1327C38A23007E7869 /* UserStore.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
+				C1A829B627CE1740007B7077 /* WantGoView.swift in Sources */,
 				5A0F853427BFAAF5004592D9 /* CardModel.swift in Sources */,
+				C1C639FA27CCDE1D00A4B2D2 /* WantDrinkView.swift in Sources */,
 				5A433C0C27BFB93D007E7869 /* SmallCardImage.swift in Sources */,
 				2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */,
 				5A0F852327BE3D9B004592D9 /* CreateView.swift in Sources */,
 				5A861BC027C8D227004EC3DA /* BarView.swift in Sources */,
 				2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */,
+				C1C639F627CCC44200A4B2D2 /* WantEatView.swift in Sources */,
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A433C0F27C389A3007E7869 /* Category.swift in Sources */,

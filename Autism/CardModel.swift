@@ -15,11 +15,12 @@ struct CardModel: View {
         
         self.title = title
         self.image = image
-        
     }
-
+    
     var body: some View {
+        
         VStack{
+            
             ZStack{
                   
                     
@@ -47,11 +48,12 @@ struct CardModel: View {
             }
         }
     }
+}
 
 
 struct CardModel_Previews: PreviewProvider {
     static var previews: some View {
         CardModel(title : "cane ",image: "fox")
-            
+        
     }
 }

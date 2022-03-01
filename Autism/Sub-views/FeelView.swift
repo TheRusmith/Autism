@@ -24,7 +24,7 @@ struct FeelView: View {
                         
                         ForEach(UserStore().wants,id: \.self) { want in
                             NavigationLink(destination: HomeView()) {
-                                CardModel(title: want.title,image: want.imageName)
+                                CardModel(title: feel.title,image: feel.imageName)
                             }
                         }
                     }

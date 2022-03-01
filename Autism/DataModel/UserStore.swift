@@ -14,14 +14,14 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
     @Published var level2: Level2? = nil
     @Published var level3: Level3? = nil
     
-    @Published var feels: [Feel] = [Feel(title: "Happy", imageName: "fox"),
-                                    Feel(title: "Tired", imageName: "fox"),
-                                    Feel(title: "Sick", imageName: "fox"),
-                                    Feel(title: "Angry", imageName: "fox"),
-                                    Feel(title: "Sad", imageName: "fox")]
+    @Published var feels: [Feel] = [Feel(title: "Happy", imageName: "happy"),
+                                    Feel(title: "Tired", imageName: "tired"),
+                                    Feel(title: "Sick", imageName: "sick"),
+                                    Feel(title: "Angry", imageName: "angry"),
+                                    Feel(title: "Sad", imageName: "sad")]
     
-    @Published var wants: [Want] = [Want(title: "Eat",imageName: "fox"),
-                                    Want(title:"Drink",imageName: "fox"),
+    @Published var wants: [Want] = [Want(title: "Eat",imageName: "burger"),
+                                    Want(title:"Drink",imageName: "climbing"),
                                     Want(title:"Play",imageName: "fox"),
                                     Want(title:"Go",imageName: "fox")]
     
