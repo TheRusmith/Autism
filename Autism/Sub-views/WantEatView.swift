@@ -7,6 +7,7 @@
 import SwiftUI
 struct WantEatView: View {
     @EnvironmentObject  var userStore: UserStore
+    let speechservice = SpeechService()
     var body: some View {
         
         VStack{
@@ -25,6 +26,8 @@ struct WantEatView: View {
                 }
                 .navigationBarHidden(true)
             }
+        }.onAppear() {
+            speechservice.say("Io voglio mangiare")
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

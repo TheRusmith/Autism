@@ -7,8 +7,7 @@
 import SwiftUI
 struct FeelView: View {
     @EnvironmentObject  var userStore: UserStore
-//    @Binding var messages: [String]
-//    @EnvironmentObject var message : MessageData
+    
     let speechService = SpeechService()
     var body: some View {
         
@@ -39,7 +38,6 @@ struct FeelView: View {
         .navigationBarHidden(true)
         .onAppear {
             speechService.say("I feel")
-            
               appendStep(step: "iwant")
             
         }

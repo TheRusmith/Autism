@@ -6,7 +6,9 @@
 //
 import SwiftUI
 struct WantPeopleView: View {
+    
     @EnvironmentObject  var userStore: UserStore
+    let speechservice = SpeechService()
     var body: some View {
         
         VStack{
