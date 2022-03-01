@@ -20,27 +20,47 @@ class UserStore: ObservableObject, Identifiable {
                                     Feel(title: "Angry", imageName: "angry"),
                                     Feel(title: "Sad", imageName: "sad")]
     
-    @Published var wants: [Want] = [Want(title: "Eat",imageName: "fox"),
-                                    Want(title:"Drink",imageName: "fox"),
+    @Published var wants: [Want] = [Want(title: "Eat",imageName: "burger"),
+                                    Want(title:"Drink",imageName: "climbing"),
                                     Want(title:"Play",imageName: "fox"),
                                     Want(title:"Go",imageName: "fox")]
     
-    @Published var wantplay: [WantPlay] = [WantPlay(title: "Playstation 5", imageName: "GIOCO")]
+    @Published var wantplay: [WantPlay] = [WantPlay(title: "Football",imageName: "ball"),
+                                           WantPlay(title: "Soap bubbles",imageName: "penguin"),
+                                           WantPlay(title: "Balloons",imageName: "balloons"),
+                                           WantPlay(title: "Basketball",imageName: "basketball"),
+                                           WantPlay(title: "Puzzle",imageName: "puzzle"),
+                                           WantPlay(title: "Climbing Stairs",imageName: "climbing")]
     
-    @Published var wanteat: [WantEat] = [WantEat(title: "Burger",imageName: "fox"),
-                                         WantEat(title:"Pizza",imageName: "fox"),
-                                         WantEat(title:"Ice Cream",imageName: "fox"),
-                                         WantEat(title:"Chips",imageName: "fox"),
-                                         WantEat(title:"Chocolate",imageName: "fox")]
     
-    @Published var wantdrink : [WantDrink] = [WantDrink(title: "Water", imageName: "acqua"),
-                                              WantDrink(title: "CocaCola", imageName: "cocacola"),
-                                              WantDrink(title: "Milk", imageName: "lattescremato")]
-    @Published var wantgo : [WantGo] = []
+    @Published var wanteat: [WantEat] = [WantEat(title: "Burger",imageName: "burger"),
+                                         WantEat(title:"Pizza",imageName: "pizza"),
+                                         WantEat(title:"Ice Cream",imageName: "icecream"),
+                                         WantEat(title:"Chips",imageName: "chips"),
+                                         WantEat(title:"Chocolate",imageName: "chocolate"),
+                                         WantEat(title:"Cotton Candy",imageName: "cottoncandy")]
     
-    @Published var wantpeople : [WantPeople] = []
+    @Published var wantdrink : [WantDrink] = [WantDrink(title: "Coca",imageName: "cola"),
+                                              WantDrink(title:"Fanta",imageName: "fanta"),
+                                              WantDrink(title:"Water",imageName: "water"),
+                                              WantDrink(title:"Juice",imageName: "juice"),
+                                              WantDrink(title:"Sprite",imageName: "sprite"),
+                                              WantDrink(title:"Lemonade",imageName: "limonata")]
+    
+    @Published var wantgo : [WantGo] = [WantGo(title: "Playground",imageName: "playground"),
+                                        WantGo(title:"Cinema",imageName: "cinema"),
+                                        WantGo(title:"Zoo",imageName: "zoo"),
+                                        WantGo(title:"Home",imageName: "home"),
+                                        WantGo(title:"Park",imageName: "park")]
+    
+    @Published var wantpeople : [WantPeople] = [WantPeople(title: "Dad",imageName: "dad"),
+                                                WantPeople(title:"Mum",imageName: "mum"),
+                                                WantPeople(title:"Brother",imageName: "brother"),
+                                                WantPeople(title:"Sister",imageName: "sister"),
+                                                WantPeople(title:"Grandfather",imageName: "grandfather"),
+                                                WantPeople(title:"Grandmother",imageName: "grandmother")]
    
-    @Published var needs = []
+    
    
     //wants.insert(Want(title: "brividi ", imageName: "photo")
    //var wants = [Want(title: "Cane",imageName: "photo")]

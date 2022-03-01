@@ -1,11 +1,11 @@
 //
-//  EatView.swift
+//  WantDrinkView.swift
 //  Autism
 //
 //  Created by Emanuele Bosco on 28/02/22.
 //
 import SwiftUI
-struct WantEatView: View {
+struct WantPlayView: View {
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
         
@@ -13,9 +13,9 @@ struct WantEatView: View {
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
-                        ForEach(UserStore().wanteat,id: \.self) { WantEat in
+                        ForEach(UserStore().wantplay,id: \.self) { WantPlay in
                             NavigationLink(destination: HomeView()) {
-                                CardModel(title: WantEat.title,image: WantEat.imageName)
+                                CardModel(title: WantPlay.title,image: WantPlay.imageName)
                             }
                         }
                     }
@@ -30,10 +30,9 @@ struct WantEatView: View {
         .navigationBarHidden(true)
     }
 }
-struct WantEatView_Previews: PreviewProvider {
+struct WantPlayView_Previews: PreviewProvider {
     static var previews: some View {
-        WantEatView()
+        WantPlayView()
             .environmentObject(UserStore())
     }
 }
-
