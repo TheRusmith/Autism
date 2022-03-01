@@ -67,124 +67,71 @@ struct HomeView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
             
-//            Rectangle()
-//                .frame(width: 280, height: 10)
-//                .opacity(0)   // Rettangolo immaginario (megli di .padding)
-            
-            VStack{
-                Spacer()
+            VStack(spacing:50){
                 
-                ZStack{
-                    
-                    Rectangle()
-                        .frame(width: 320, height: 90, alignment: .center)
-                        .cornerRadius(20)
-                        .foregroundColor(.red)
-                        .shadow(radius: 5)
-                        .overlay {
-                            Text("I feel...")
-                                .font(.largeTitle)
-                                .fontWeight(.semibold)
+                Rectangle()
+                    .frame(width: 100, height: 1)
+                    .opacity(0)
+                
+                Button(action: {
+                    speechService.say("i feel ")
+                }, label: {
+                    NavigationLink(destination: FeelView(),  label: {
+                        ZStack{
+                            
+                            Rectangle()
+                                .frame(width: 320, height: 90, alignment: .center)
+                                .cornerRadius(20)
                                 .foregroundColor(.white)
-                                .padding(.leading, 120)
+                                .shadow(radius: 5)
+                                .overlay {
+                                    Text("I feel...")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.red)
+                                        .padding(.leading, 120)
+                                }
+                            
+                            Image("feel")
+                                .resizable()
+                                .scaledToFill()
+                                .background(.white)
+                                .cornerRadius(20)
+                                .frame(width: 90, height: 90, alignment: .center)
+                                .padding(.trailing, 230)
                         }
-                    
-                    Image("feel")
-                        .resizable()
-                        .scaledToFill()
-                        .background(.white)
-                        .cornerRadius(20)
-                        .frame(width: 90, height: 90, alignment: .center)
-                        .padding(.trailing, 230)
-                }
-                
-                Spacer()
-                
-                ZStack{
-                    
-                    Rectangle()
-                        .frame(width: 320, height: 90, alignment: .center)
-                        .cornerRadius(20)
-                        .foregroundColor(.red)
-                        .shadow(radius: 5)
-                        .overlay {
-                            Text("I want...")
-                                .font(.largeTitle)
-                                .fontWeight(.semibold)
+                })
+            })
+
+                Button(action: {
+                    speechService.say("i want ")
+                }, label: {
+                    NavigationLink(destination: WantView(),  label: {
+                        ZStack{
+                            
+                            Rectangle()
+                                .frame(width: 320, height: 90, alignment: .center)
+                                .cornerRadius(20)
                                 .foregroundColor(.white)
-                                .padding(.leading, 120)
+                                .shadow(radius: 5)
+                                .overlay {
+                                    Text("I want...")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.red)
+                                        .padding(.leading, 120)
+                                }
+                            
+                            Image("want")
+                                .resizable()
+                                .scaledToFill()
+                                .background(.white)
+                                .cornerRadius(20)
+                                .frame(width: 90, height: 90, alignment: .center)
+                                .padding(.trailing, 230)
                         }
-                    
-                    Image("want")
-                        .resizable()
-                        .scaledToFill()
-                        .background(.white)
-                        .cornerRadius(20)
-                        .frame(width: 90, height: 90, alignment: .center)
-                        .padding(.trailing, 230)
-                }
-                
-                
-                
-                
-                
-//                Button(action: {
-//                    speechService.say("i feel ")
-//                }, label: {
-//                    NavigationLink(destination: WantView(),  label: {
-//                    Rectangle()
-//                        .cornerRadius(15)
-//                        .shadow(radius: 10)
-//                        .frame(width: 190, height: 170)
-//                        .foregroundColor(.white)
-//                        .overlay(
-//                            VStack{
-//                            Image("want")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .aspectRatio(0.85, contentMode: .fit)
-//                                .frame(width: 200, height: 140)
-//
-//                                Spacer()
-//
-//                                Text("I want...")
-//                                    .foregroundColor(.black)
-//                                    .fontWeight(.semibold)
-//                                    .multilineTextAlignment(.center)
-//
-//                                Spacer()
-//                            })
-//                })
-//            })
-//                Spacer()
-//
-//                Button(action: {
-//                    speechService.say("i feel ")
-//                }, label: {
-//                    NavigationLink(destination: FeelView(),  label: {
-//                        Rectangle()
-//                            .cornerRadius(15)
-//                            .shadow(radius: 10)
-//                            .frame(width: 190, height: 170)
-//                            .foregroundColor(.white)
-//                            .overlay(
-//                                VStack{
-//                                    Image("feel")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .aspectRatio(0.85, contentMode: .fit)
-//                                        .frame(width: 200, height: 140)
-//
-//                                    Spacer()
-//
-//                                    Text("I feel...")
-//                                        .foregroundColor(.black)
-//                                        .fontWeight(.semibold)
-//                                        .multilineTextAlignment(.center)
-//                                    Spacer()
-//                                })
-//                    })
-//                })
+                })
+            })
                 Spacer()
             }
         }
