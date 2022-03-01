@@ -24,7 +24,7 @@ struct FeelView: View {
                         
                         ForEach(UserStore().wants,id: \.self) { want in
                             NavigationLink(destination: HomeView()) {
-                                CardModel(title: feel.title,image: feel.imageName)
+                                CardModel(title: want.title,image: want.imageName)
                             }
                         }
                     }
@@ -39,7 +39,7 @@ struct FeelView: View {
         .navigationBarHidden(true)
         .onAppear {
             speechService.say("I feel")
-//            UserStore().appendText(step: "iwant")
+            
               appendStep(step: "iwant")
             
         }

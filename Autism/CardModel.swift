@@ -47,7 +47,7 @@ struct CardModel: View {
                   }
             }
         }
-    }
+    
 }
 
 
