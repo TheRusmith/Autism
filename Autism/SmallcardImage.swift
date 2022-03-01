@@ -26,7 +26,7 @@ struct SmallcardImage: View {
                     .frame(width: 60, height: 60)
                     .cornerRadius(10)
             
-            Text(title)
+            Text(title.capitalized)
                    .background(Color.black)
                    .foregroundColor(.white)
                    .font(.headline)

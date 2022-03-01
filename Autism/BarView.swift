@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BarView: View {
     @State var messages = ["fox","tired","angry"]
-//    @EnvironmentObject  var userStore: UserStore
+   // @EnvironmentObject  var userStore: UserStore
     var body: some View {
      
                 ZStack{
