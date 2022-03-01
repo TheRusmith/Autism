@@ -67,7 +67,7 @@ struct SettingsView : View {
             Text("Voice")
                 .fontWeight(.bold)
                    .font(.title)
-                   .foregroundColor(.orange)
+                   .foregroundColor(.red)
             
             Picker("City", selection: $preselectedIndex) {
                             ForEach(0..<voice.count) { index in
@@ -84,7 +84,7 @@ struct SettingsView : View {
             Text("Language")
                 .fontWeight(.bold)
                    .font(.title)
-                   .foregroundColor(.orange)
+                   .foregroundColor(.red)
             
             Picker(selection: $selectedFrameworkIndex, label: Text("")) {
                         ForEach(0 ..< frameworks.count) {

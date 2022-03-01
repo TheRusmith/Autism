@@ -15,42 +15,43 @@ struct CardModel: View {
         
         self.title = title
         self.image = image
-        
     }
-
+    
     var body: some View {
+        
         VStack{
+            
             ZStack{
-                  
-                    
-                   
-            Rectangle()
-                .frame(width: 320, height: 90, alignment: .center)
-                .cornerRadius(20)
-                .foregroundColor(.red)
-                .shadow(radius: 5)
-                .overlay {
-                    Text(title)
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding(.leading, 120)
-                }
-                      Image(image)
-                          .resizable()
-                          .scaledToFit()
-                          .cornerRadius(20)
-                          .frame(width: 90, height: 90, alignment: .center)
-                          .padding(.trailing, 230)
-                  }
+                
+                Rectangle()
+                    .frame(width: 320, height: 90, alignment: .center)
+                    .cornerRadius(20)
+                    .foregroundColor(.red)
+                    .shadow(radius: 5)
+                    .overlay {
+                        Text(title)
+                            .font(.largeTitle)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .padding(.leading, 120)
+                    }
+                
+                Image(image)
+                    .resizable()
+                    .scaledToFill()
+                    .background(.white)
+                    .cornerRadius(20)
+                    .frame(width: 90, height: 90, alignment: .center)
+                    .padding(.trailing, 230)
             }
         }
     }
+}
 
 
 struct CardModel_Previews: PreviewProvider {
     static var previews: some View {
         CardModel(title : "cane ",image: "fox")
-            
+        
     }
 }
