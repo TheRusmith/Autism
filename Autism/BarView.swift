@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct BarView: View {
-    @State var messages = ["fox","tired","angry"]
+    @State var messages = [String]()
+    let title : String
+    let image : String
+    internal init(title: String ,image: String ) {
+        
+        self.title = title
+        self.image = image
+    }
+
    // @EnvironmentObject  var userStore: UserStore
     var body: some View {
-     
+                
                 ZStack{
+                    
                     Rectangle()
                         .frame(width: 414, height: 180, alignment: .center)
                         .foregroundColor(Color.red)
@@ -27,7 +36,7 @@ struct BarView: View {
                                 ScrollView(.horizontal) {
                                     HStack {
                                       //BUG APPARE SOLO ULTIMA CARD
-                                        ForEach(messages,id: \.self) { message in
+                                        ForEach(messages2,id: \.self) { message in
                                             SmallcardImage(title: message,image: message)
                                             Image(systemName: "arrow.right")
                                                 .font(.system(size: 30.0, weight: .bold))
@@ -48,15 +57,40 @@ struct BarView: View {
                             .frame(width: 80, height: 80, alignment: .center)
                             .padding(.top, 40)
                         Spacer()
+                    } .onAppear {
+                        messages.append(title)
+                        appendStep(step: title)
                     }
                 }
             .ignoresSafeArea()
             .navigationBarHidden(true)
     }
 }
+
+
+
+
+@ViewBuilder func updateBarView(view: String) -> some View {
+    switch view {
+    case "Feel":
+        
+        BarView(title: "fox",image: "fox")
+    case "WantView":
+        BarView(title: "want",image: "fox")
+    case "Go":
+        BarView(title: "provaaaa",image: "fox")
+    case "Play":
+        BarView(title: "play",image: "fox")
+    case "People":
+        BarView(title: "people",image: "fox")
+    default:
+        BarView(title: "6000euro",image: "ball")
+    }
+}
+
 struct BarView_Previews: PreviewProvider {
     static var previews: some View {
-        BarView()
-         //   .environmentObject(UserStore())
+        BarView(title: "fox",image: "ifeel")
+         
     }
 }

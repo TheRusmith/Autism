@@ -12,10 +12,13 @@ struct FeelView: View {
     var body: some View {
         
         VStack{
-
+            HStack {
+                updateBarView(view: "Feel")
+                    .padding(.top, 21)
+            }
             
-            BarView()
-                .padding(.top, 21)
+          //  updateBarView(view: "Feel")
+              //  .padding(.top, 21)
  
             NavigationView{
                 ScrollView(showsIndicators: false){

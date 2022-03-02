@@ -11,11 +11,15 @@ struct WantDrinkView: View {
     var body: some View {
         
         VStack{
-            NavigationView{
+//            updateBarView(view: "Drink")
+            HStack {
+                updateBarView(view: "WantDrinkView")
+                    .padding(.top, 21)
+            }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantdrink,id: \.self) { WantDrink in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: WantDrink.title,image: WantDrink.imageName)
                             }
                         }
@@ -25,7 +29,7 @@ struct WantDrinkView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-            }
+
         }
         .onAppear  {
             speechservice.say("Io voglio bere") 

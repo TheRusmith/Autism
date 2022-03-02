@@ -12,11 +12,15 @@ struct WantPlayView: View {
     var body: some View {
         
         VStack{
-            NavigationView{
+           
+            HStack {
+                updateBarView(view: "Play")
+                    .padding(.top, 21)
+            }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantplay,id: \.self) { WantPlay in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: WantPlay.title,image: WantPlay.imageName)
                             }
                         }
@@ -25,10 +29,11 @@ struct WantPlayView: View {
                     .padding(.leading, 9)
                     .padding(.trailing, 9)
                 }
-                .navigationBarHidden(true)
-            }
+              .navigationBarHidden(true)
+
         }  .onAppear  {
             speechservice.say("Io voglio giocare")
+            
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

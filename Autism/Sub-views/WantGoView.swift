@@ -11,11 +11,14 @@ struct WantGoView: View {
     var body: some View {
         
         VStack{
-            NavigationView{
+            HStack {
+                updateBarView(view: "WantGoView")
+                    .padding(.top, 21)
+            }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantgo,id: \.self) { WantGo in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: WantGo.title,image: WantGo.imageName)
                             }
                         }
@@ -25,7 +28,7 @@ struct WantGoView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-            }
+
         }  .onAppear {
             speechservice.say("Io voglio andare")
         }

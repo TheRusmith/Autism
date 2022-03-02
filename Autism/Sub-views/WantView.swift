@@ -28,11 +28,13 @@ struct WantView: View {
     var body: some View {
         
         VStack{
-            BarView()
-                .padding(.top, 21)
-
+          
+            HStack {
+                updateBarView(view: "WantView")
+                    .padding(.top, 21)
+            }
              
-            NavigationView{
+//            NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wants, id: \.self) { want in
@@ -47,7 +49,7 @@ struct WantView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-            }
+//            }
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

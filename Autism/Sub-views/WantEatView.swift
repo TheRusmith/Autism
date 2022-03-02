@@ -11,11 +11,15 @@ struct WantEatView: View {
     var body: some View {
         
         VStack{
-            NavigationView{
+            HStack {
+                updateBarView(view: "WantEatView")
+                    .padding(.top, 21)
+            }
+
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wanteat,id: \.self) { WantEat in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: WantEat.title,image: WantEat.imageName)
                             }
                         }
@@ -23,7 +27,6 @@ struct WantEatView: View {
                     .padding(.top, 9)
                     .padding(.leading, 9)
                     .padding(.trailing, 9)
-                }
                 .navigationBarHidden(true)
             }
         }.onAppear  {

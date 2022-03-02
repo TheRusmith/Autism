@@ -11,12 +11,16 @@ struct WantPeopleView: View {
     let speechservice = SpeechService()
     var body: some View {
         
+       // updateBarView(view: "People")
         VStack{
-            NavigationView{
+            HStack {
+                updateBarView(view: "Feel")
+                    .padding(.top, 21)
+            }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantpeople,id: \.self) { WantPeople in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: WantPeople.title,image: WantPeople.imageName)
                             }
                         }
@@ -24,7 +28,7 @@ struct WantPeopleView: View {
                     .padding(.top, 9)
                     .padding(.leading, 9)
                     .padding(.trailing, 9)
-                }
+
                 .navigationBarHidden(true)
             }
         }

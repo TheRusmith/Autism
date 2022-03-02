@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26062F8B27CE0B480075AA85 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26062F8A27CE0B480075AA85 /* ViewModel.swift */; };
 		2626625D27C8CA4000BCD55B /* WantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626625C27C8CA4000BCD55B /* WantView.swift */; };
 		2678D7C627BE50B6006A13E5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C527BE50B6006A13E5 /* ImagePicker.swift */; };
 		2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C727BE50EF006A13E5 /* Image&Extension.swift */; };
 		2678D7CA27BE511D006A13E5 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7C927BE511D006A13E5 /* Audio.swift */; };
-		2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7CB27BE5161006A13E5 /* DataHandling.swift */; };
 		2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678D7D127BE64D7006A13E5 /* SpeechService.swift */; };
 		2694F13827C4E9720063111C /* DataInizialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694F13727C4E9720063111C /* DataInizialization.swift */; };
+		26F3146427CF6FB00092F3AD /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3146327CF6FB00092F3AD /* FinalView.swift */; };
 		5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F850927BCEBE9004592D9 /* AutismApp.swift */; };
 		5A0F850E27BCEBEA004592D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F850D27BCEBEA004592D9 /* Assets.xcassets */; };
 		5A0F851127BCEBEA004592D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */; };
@@ -40,14 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26062F8A27CE0B480075AA85 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2626625C27C8CA4000BCD55B /* WantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantView.swift; sourceTree = "<group>"; };
 		2678D7C527BE50B6006A13E5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2678D7C727BE50EF006A13E5 /* Image&Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image&Extension.swift"; sourceTree = "<group>"; };
 		2678D7C927BE511D006A13E5 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		2678D7CB27BE5161006A13E5 /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
 		2678D7D127BE64D7006A13E5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		2694F13727C4E9720063111C /* DataInizialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInizialization.swift; sourceTree = "<group>"; };
+		26F3146327CF6FB00092F3AD /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		5A0F850627BCEBE9004592D9 /* Autism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F850927BCEBE9004592D9 /* AutismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutismApp.swift; sourceTree = "<group>"; };
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,8 +117,6 @@
 				5A0F853327BFAAF5004592D9 /* CardModel.swift */,
 				5A433C0B27BFB93D007E7869 /* SmallCardImage.swift */,
 				5A861BBF27C8D227004EC3DA /* BarView.swift */,
-				2678D7CB27BE5161006A13E5 /* DataHandling.swift */,
-				26062F8A27CE0B480075AA85 /* ViewModel.swift */,
 				5A0F852627BE3DEE004592D9 /* Views */,
 				5A0F852B27BEB193004592D9 /* Sub-views */,
 				5A433C0D27C38984007E7869 /* DataModel */,
@@ -155,13 +151,14 @@
 			isa = PBXGroup;
 			children = (
 				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
-				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
 				2626625C27C8CA4000BCD55B /* WantView.swift */,
+				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
 				C1506E9227CED99900BC4414 /* WantPlayView.swift */,
 				C1A829B527CE1740007B7077 /* WantGoView.swift */,
 				C1A829B727CE178D007B7077 /* WantPeopleView.swift */,
 				C1C639F527CCC44200A4B2D2 /* WantEatView.swift */,
 				C1C639F927CCDE1D00A4B2D2 /* WantDrinkView.swift */,
+				26F3146327CF6FB00092F3AD /* FinalView.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
@@ -247,10 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2678D7CC27BE5161006A13E5 /* DataHandling.swift in Sources */,
 				C1A829B827CE178D007B7077 /* WantPeopleView.swift in Sources */,
 				5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */,
 				5A433C1327C38A23007E7869 /* UserStore.swift in Sources */,
+				26F3146427CF6FB00092F3AD /* FinalView.swift in Sources */,
 				5A0F852127BE3D89004592D9 /* FavView.swift in Sources */,
 				2678D7D227BE64D7006A13E5 /* SpeechService.swift in Sources */,
 				5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */,
@@ -266,7 +263,6 @@
 				5A0F852527BE3DC8004592D9 /* FeelView.swift in Sources */,
 				5A0F852827BEA755004592D9 /* TestButtonView.swift in Sources */,
 				5A433C0F27C389A3007E7869 /* Category.swift in Sources */,
-				26062F8B27CE0B480075AA85 /* ViewModel.swift in Sources */,
 				5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */,
 				2626625D27C8CA4000BCD55B /* WantView.swift in Sources */,
 				2694F13827C4E9720063111C /* DataInizialization.swift in Sources */,
