@@ -6,31 +6,38 @@
 
 import SwiftUI
 struct WantView: View {
+    
+    @ViewBuilder func getView(view: String) -> some View {
+        switch view {
+        case "Drink":
+            WantDrinkView()
+        case "Eat":
+            WantEatView()
+        case "Go":
+            WantGoView()
+        case "Play":
+            WantPlayView()
+        case "People":
+            WantPeopleView()
+        default:
+            WantDrinkView()
+        }
+    }
+    
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
         
         VStack{
             BarView()
                 .padding(.top, 21)
-     /*
-             VStack {
-                 List(UserStore().wants.indices, id: \.self) { index in
-                     NavigationLink(destination:
-             CardModel(title : want.title.index,image: want.title.imageName)) {
-                         HStack {
-                             Text(wants[index].name)
-                         }
-                     }
-                 }
-             }
-             
-*/
+
              
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
-                        ForEach(UserStore().wants,id: \.self) { want in
-                            NavigationLink(destination: WantEatView()) {
+                        ForEach(UserStore().wants, id: \.self) { want in
+                            
+                            NavigationLink(destination: getView(view: want.title)) {
                                 CardModel(title: want.title,image: want.imageName)
                             }
                         }

@@ -26,8 +26,8 @@ struct WantGoView: View {
                 }
                 .navigationBarHidden(true)
             }
-        }  .onAppear() {
-            speechservice.say("Io voglio giocare ")
+        }  .onAppear {
+            speechservice.say("Io voglio andare")
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

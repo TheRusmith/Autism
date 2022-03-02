@@ -12,18 +12,18 @@ struct FeelView: View {
     var body: some View {
         
         VStack{
-//            userStore.appendWants(title: "scarafaggio", imageName: "angry")
+
             
             BarView()
                 .padding(.top, 21)
-//            UserStore().appendText(step: "cane")
+ 
             NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         
-                        ForEach(UserStore().wants,id: \.self) { want in
+                        ForEach(UserStore().feels,id: \.self) { feel in
                             NavigationLink(destination: HomeView()) {
-                                CardModel(title: want.title,image: want.imageName)
+                                CardModel(title: feel.title,image: feel.imageName)
                             }
                         }
                     }
@@ -37,7 +37,7 @@ struct FeelView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
         .onAppear {
-            speechService.say("I feel")
+            speechService.say("Io sono")
               appendStep(step: "iwant")
             
         }

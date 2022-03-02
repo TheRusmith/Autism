@@ -32,7 +32,7 @@
 		5A433C1327C38A23007E7869 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433C1227C38A23007E7869 /* UserStore.swift */; };
 		5A861BC027C8D227004EC3DA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BBF27C8D227004EC3DA /* BarView.swift */; };
 		5A861BC427CCD627004EC3DA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A861BC327CCD627004EC3DA /* SettingsView.swift */; };
-		C1A829B427CE16A2007B7077 /* WantPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B327CE16A2007B7077 /* WantPlayView.swift */; };
+		C1506E9327CED99900BC4414 /* WantPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1506E9227CED99900BC4414 /* WantPlayView.swift */; };
 		C1A829B627CE1740007B7077 /* WantGoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B527CE1740007B7077 /* WantGoView.swift */; };
 		C1A829B827CE178D007B7077 /* WantPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829B727CE178D007B7077 /* WantPeopleView.swift */; };
 		C1C639F627CCC44200A4B2D2 /* WantEatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C639F527CCC44200A4B2D2 /* WantEatView.swift */; };
@@ -66,7 +66,7 @@
 		5A433C1227C38A23007E7869 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		5A861BBF27C8D227004EC3DA /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		5A861BC327CCD627004EC3DA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		C1A829B327CE16A2007B7077 /* WantPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantPlayView.swift; sourceTree = "<group>"; };
+		C1506E9227CED99900BC4414 /* WantPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantPlayView.swift; sourceTree = "<group>"; };
 		C1A829B527CE1740007B7077 /* WantGoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantGoView.swift; sourceTree = "<group>"; };
 		C1A829B727CE178D007B7077 /* WantPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantPeopleView.swift; sourceTree = "<group>"; };
 		C1C639F527CCC44200A4B2D2 /* WantEatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantEatView.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				5A0F852427BE3DC8004592D9 /* FeelView.swift */,
 				5A0F852727BEA755004592D9 /* TestButtonView.swift */,
 				2626625C27C8CA4000BCD55B /* WantView.swift */,
-				C1A829B327CE16A2007B7077 /* WantPlayView.swift */,
+				C1506E9227CED99900BC4414 /* WantPlayView.swift */,
 				C1A829B527CE1740007B7077 /* WantGoView.swift */,
 				C1A829B727CE178D007B7077 /* WantPeopleView.swift */,
 				C1C639F527CCC44200A4B2D2 /* WantEatView.swift */,
@@ -271,6 +271,7 @@
 				2626625D27C8CA4000BCD55B /* WantView.swift in Sources */,
 				2694F13827C4E9720063111C /* DataInizialization.swift in Sources */,
 				2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */,
+				C1506E9327CED99900BC4414 /* WantPlayView.swift in Sources */,
 				5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */,
 				5A0F851627BCEBEA004592D9 /* Autism.xcdatamodeld in Sources */,
 				5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */,

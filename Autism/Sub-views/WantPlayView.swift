@@ -1,3 +1,4 @@
+
 //
 //  WantDrinkView.swift
 //  Autism
@@ -25,9 +26,9 @@ struct WantPlayView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-            } .onAppear() {
-                speechservice.say("Io voglio giocare ")
             }
+        }  .onAppear  {
+            speechservice.say("Io voglio giocare")
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
