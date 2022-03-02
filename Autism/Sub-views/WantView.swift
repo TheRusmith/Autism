@@ -23,7 +23,7 @@ struct WantView: View {
             WantDrinkView()
         }
     }
-    
+    let speechservice = SpeechService()
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
         
@@ -50,6 +50,8 @@ struct WantView: View {
                 }
                 .navigationBarHidden(true)
 //            }
+        }.onAppear {
+            speechservice.say("I want")
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

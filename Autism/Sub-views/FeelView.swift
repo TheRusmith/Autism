@@ -40,7 +40,7 @@ struct FeelView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
         .onAppear {
-            speechService.say("Io sono")
+            speechService.say("I feel ")
               appendStep(step: "iwant")
             
         }

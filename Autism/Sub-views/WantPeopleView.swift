@@ -32,6 +32,9 @@ struct WantPeopleView: View {
                 .navigationBarHidden(true)
             }
         }
+        .onAppear {
+            speechservice.say("I want people")
+        }
         .ignoresSafeArea()
         .navigationBarHidden(true)
     }

@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 class SpeechService {
     var volume : Float = 0.8
-    var language : String = "it-IT"
+    var language : String = "en-US"
     //mute put volume = 0 
     private let synthesizer = AVSpeechSynthesizer()
     func say (_ phrase: String) {

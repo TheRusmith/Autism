@@ -32,7 +32,7 @@ struct WantDrinkView: View {
 
         }
         .onAppear  {
-            speechservice.say("Io voglio bere") 
+            speechservice.say("I want drink") 
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
