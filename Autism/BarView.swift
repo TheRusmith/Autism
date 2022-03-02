@@ -78,13 +78,13 @@ struct BarView: View {
     case "WantView":
         BarView(title: "want",image: "fox")
     case "Go":
-        BarView(title: "provaaaa",image: "fox")
+        BarView(title: "brother",image: "fox")
     case "Play":
         BarView(title: "play",image: "fox")
     case "People":
         BarView(title: "people",image: "fox")
     default:
-        BarView(title: "6000euro",image: "ball")
+        BarView(title: "brother",image: "ball")
     }
 }
 
