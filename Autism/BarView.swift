@@ -73,7 +73,6 @@ struct BarView: View {
 @ViewBuilder func updateBarView(view: String) -> some View {
     switch view {
     case "Feel":
-        
         BarView(title: "fox",image: "fox")
     case "WantView":
         BarView(title: "want",image: "fox")

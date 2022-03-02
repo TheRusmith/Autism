@@ -20,13 +20,13 @@ struct FeelView: View {
           //  updateBarView(view: "Feel")
               //  .padding(.top, 21)
  
-            NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         
                         ForEach(UserStore().feels,id: \.self) { feel in
-                            NavigationLink(destination: HomeView()) {
+                            NavigationLink(destination: FinalView()) {
                                 CardModel(title: feel.title,image: feel.imageName)
+                                
                             }
                         }
                     }
@@ -35,7 +35,7 @@ struct FeelView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-            }
+
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
