@@ -37,6 +37,17 @@ struct CardModel: View {
                         .foregroundColor(.white)
                         .padding(.leading, 120)
                 }
+                .overlay{
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "heart")
+                            .imageScale(.large)
+                            .foregroundColor(.white)
+                            .position(x:300, y: 20)
+                        
+                    }
+                }
                       Image(image)
                     
                           .resizable()
