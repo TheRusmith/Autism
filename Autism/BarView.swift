@@ -36,8 +36,8 @@ struct BarView: View {
                                       //BUG APPARE SOLO ULTIMA CARD
                                         ForEach(messages,id: \.self) { message in
                                             SmallcardImage(title: message,image: message)
-                                            Image(systemName: "arrow.right")
-                                                .font(.system(size: 30.0, weight: .bold))
+//                                            Image(systemName: "arrow.right")
+//                                                .font(.system(size: 30.0, weight: .bold))
                                         }
                                     }
                                     .padding(.leading, 10)

@@ -10,17 +10,32 @@ struct FeelView: View {
     let speechservice = SpeechService()
     func speechTalk (title : String) {
         switch title {
-            case "Happy":
+            case "happy":
                 speechservice.say("happy")
-            
-            case "Tired":
+            case "tired":
             speechservice.say("tired")
-            case "Angry":
+            case "angry":
             speechservice.say("angry")
-            case "Sad":
+            case "sad":
             speechservice.say("sad")
             default:
-                speechservice.say("")
+                speechservice.say("default")
+        }
+    }
+    @ViewBuilder func getFeeling(view: String) -> some View {
+        switch view {
+        case "happy":
+            FinalView(messagesFinal: ["feel","happy"])
+        case "sad":
+            FinalView(messagesFinal: ["feel","sad"])
+        case "sick":
+            FinalView(messagesFinal: ["feel","sick"])
+        case "angry":
+            FinalView(messagesFinal: ["feel","angry"])
+        case "tired":
+            FinalView(messagesFinal: ["feel","tired"])
+        default:
+            FinalView(messagesFinal: ["feel","happy","tired"])
         }
     }
     
@@ -32,18 +47,17 @@ struct FeelView: View {
                     .padding(.top, 21)
             }
             
-      
- 
                 ScrollView(showsIndicators: false){
                     VStack(alignment: .center, spacing: 30) {
                         
                         ForEach(UserStore().feels,id: \.self) { feel in
-                            NavigationLink(destination: FinalView()) {
+                            NavigationLink(destination: getFeeling(view: feel.title)) {
                                 CardModel(title: feel.title,image: feel.imageName)
                                 
-                            } .onTapGesture {
-                                speechTalk(title: feel.title)
                             }
+//                            .onTapGesture {
+//                                speechTalk(title: feel.title)
+//                            }
                         }
                     }
                     .padding(.top, 9)

@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct FinalView: View {
+    @State var messagesFinal = [String]()
     var body: some View {
-        BarView(messages: ["want"])
-        Text("ViewFinale")
+        HStack {
+            BarView(messages: messagesFinal)
+//            Text("ViewFinale")
+        }
+        
     }
 }
 
