@@ -19,11 +19,6 @@ struct HomeView: View {
                 .opacity(0)   // Rettangolo immaginario (megli di .padding)
             HStack{
                 
-                Image("menu")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .padding(.leading, 10)
-                
                 Spacer()
                 
                 Button {
