@@ -48,9 +48,9 @@ struct FeelView: View {
             }
             
                 ScrollView(showsIndicators: false){
-                    VStack(alignment: .center, spacing: 30) {
+                    VStack(alignment: .center, spacing: 30) { 
                         
-                        ForEach(UserStore().feels,id: \.self) { feel in
+                        ForEach(UserStore().feels,id: \.self) {  feel in
                             NavigationLink(destination: getFeeling(view: feel.title)) {
                                 CardModel(title: feel.title,image: feel.imageName)
                                 
