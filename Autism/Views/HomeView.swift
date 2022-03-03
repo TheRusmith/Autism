@@ -14,7 +14,6 @@ struct HomeView: View {
     NavigationView{
         VStack{
             
- 
             Rectangle()
                 .frame(width: 280, height: 30)
                 .opacity(0)   // Rettangolo immaginario (megli di .padding)

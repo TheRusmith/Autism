@@ -23,7 +23,7 @@ struct WantView: View {
             WantDrinkView()
         }
     }
-    let speechservice = SpeechService()
+    
     @EnvironmentObject  var userStore: UserStore
     var body: some View {
         

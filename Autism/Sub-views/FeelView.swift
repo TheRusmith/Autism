@@ -7,8 +7,23 @@
 import SwiftUI
 struct FeelView: View {
     @EnvironmentObject  var userStore: UserStore
+    let speechservice = SpeechService()
+    func speechTalk (title : String) {
+        switch title {
+            case "Happy":
+                speechservice.say("happy")
+            
+            case "Tired":
+            speechservice.say("tired")
+            case "Angry":
+            speechservice.say("angry")
+            case "Sad":
+            speechservice.say("sad")
+            default:
+                speechservice.say("")
+        }
+    }
     
-    let speechService = SpeechService()
     var body: some View {
         
         VStack{
@@ -17,16 +32,17 @@ struct FeelView: View {
                     .padding(.top, 21)
             }
             
-          //  updateBarView(view: "Feel")
-              //  .padding(.top, 21)
+      
  
                 ScrollView(showsIndicators: false){
-                    VStack(alignment: . center, spacing: 30) {
+                    VStack(alignment: .center, spacing: 30) {
                         
                         ForEach(UserStore().feels,id: \.self) { feel in
                             NavigationLink(destination: FinalView()) {
                                 CardModel(title: feel.title,image: feel.imageName)
                                 
+                            } .onTapGesture {
+                                speechTalk(title: feel.title)
                             }
                         }
                     }
@@ -40,7 +56,7 @@ struct FeelView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
         .onAppear {
-            speechService.say("I feel ")
+            speechservice.say("I feel ")
               appendStep(step: "iwant")
             
         }

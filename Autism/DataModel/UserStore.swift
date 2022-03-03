@@ -106,11 +106,4 @@ enum views {
 }
 //NavigationLink(destination: RecipeItemDetailView(recipe: $recipeArray[index]))
 //NavigationLink(destination: ChoiceView(selection: $selection[index]))
-//let speechservice = SpeechService()
-//func select
-//switch feel.imageName {
-//    case "happy":
-//        speechservice.say("happy")
-//    default:
-//        speechservice.say("none")
-//}
+let speechservice = SpeechService()

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FinalView: View {
     var body: some View {
-        BarView(title: "fox",image: "fox")
+        BarView(messages: ["want"])
         Text("ViewFinale")
     }
 }

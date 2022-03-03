@@ -14,13 +14,15 @@ struct SettingsView : View {
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
     var frameworks = ["English", "Italian", "Chinese", "Spanish"]
     @State private var selectedFrameworkIndex = 0
+    let defaults = UserDefaults.standard
+//    defaults.set(22, forKey: "userAge")
+    var darkModeEnabled = true
+    
     var body: some View {
         
         VStack{
             
-//            Rectangle()
-//                    .frame(width: 20, height: 30)
-//                    .opacity(0)
+            
             
             Image("fox")
                 .resizable()
