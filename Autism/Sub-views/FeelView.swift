@@ -64,7 +64,9 @@ struct FeelView: View {
     @ViewBuilder func getFeeling(view: String) -> some View {
         switch view {
         case "happy":
+            
             FinalView(messagesFinal: ["feel","happy"])
+            
         case "sad":
             FinalView(messagesFinal: ["feel","sad"])
         case "sick":
