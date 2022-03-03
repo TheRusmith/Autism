@@ -75,8 +75,10 @@ struct FeelView: View {
             FinalView(messagesFinal: ["feel","angry"])
         case "tired":
             FinalView(messagesFinal: ["feel","tired"])
+        case "arrow":
+            HomeView()
         default:
-            FinalView(messagesFinal: ["feel","happy","tired"])
+            FinalView(messagesFinal: ["feel","tired"])
         }
     }
 

@@ -47,14 +47,14 @@ struct BarView: View {
                                 .padding(.top, 42)
                             }
                         
-                        Rectangle()
-                                .frame(width: 2, height: 90, alignment: .center)
-                                .padding(.top, 40)
-                       Image("arrow")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80, alignment: .center)
-                            .padding(.top, 40)
+//                        Rectangle()
+//                                .frame(width: 2, height: 90, alignment: .center)
+//                                .padding(.top, 40)
+//                       Image("arrow")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 80, height: 80, alignment: .center)
+//                            .padding(.top, 40)
                         Spacer()
                     } 
                 }

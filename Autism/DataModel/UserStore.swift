@@ -18,13 +18,14 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
                                     Feel(title: "Tired", imageName: "tired"),
                                     Feel(title: "Sick", imageName: "sick"),
                                     Feel(title: "Angry", imageName: "angry"),
-                                    Feel(title: "Sad", imageName: "sad")]
+                                    Feel(title: "Sad", imageName: "sad"),
+                                    Feel(title: "Back",imageName:"arrow")]
     
     @Published var wants: [Want] = [Want(title: "Eat",imageName: "burger"),
                                     Want(title:"Drink",imageName: "climbing"),
                                     Want(title:"Play",imageName: "ball"),
                                     Want(title:"Go",imageName: "playground"),
-                                    Want(title:"People",imageName: "dad")]
+                                    Want(title:"Back",imageName: "arrow")]
     
     @Published var wantplay: [WantPlay] = [WantPlay(title: "Football",imageName: "ball"),
                                            WantPlay(title: "Soap bubbles",imageName: "penguin"),
