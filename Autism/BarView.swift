@@ -26,36 +26,30 @@ struct BarView: View {
                         .shadow(radius: 15)
                     HStack{
                         Rectangle()
-                            .frame(width: 300, height: 132, alignment: .center)
+                            .frame(width: 414, height: 132, alignment: .center)
                             .padding(.top, 48)
                             .opacity(0)
                             .font(.title)
                             .overlay {
                                 ScrollView(.horizontal) {
                                     HStack {
+                                        Spacer()
                                       //BUG APPARE SOLO ULTIMA CARD
                                         ForEach(messages,id: \.self) { message in
                                             SmallcardImage(title: message,image: message)
-                                                .padding(15)
-//                                            Image(systemName: "arrow.right")
+                                                .padding(25)
+//                                            Text("-")
 //                                                .font(.system(size: 30.0, weight: .bold))
+                                            Spacer()
                                         }
+                                        
                                     }
-                                    .padding(.leading, 10)
+//                                    .padding(.leading, 10)
                                     
                                 }
                                 .padding(.top, 42)
                             }
-                        
-                        Rectangle()
-                                .frame(width: 2, height: 90, alignment: .center)
-                                .padding(.top, 40)
-                       Image("arrow")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80, alignment: .center)
-                            .padding(.top, 40)
-                        Spacer()
+//                        Spacer()
                     } 
                 }
             .ignoresSafeArea()
