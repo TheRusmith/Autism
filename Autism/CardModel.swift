@@ -49,7 +49,7 @@ struct CardModel: View {
                     }
                 }
                       Image(image)
-                    
+                    //prova
                           .resizable()
                           .scaledToFit()
                           .cornerRadius(20)
