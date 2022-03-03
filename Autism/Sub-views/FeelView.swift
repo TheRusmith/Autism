@@ -22,22 +22,6 @@ struct FeelView: View {
                 speechservice.say("default")
         }
     }
-    @ViewBuilder func getFeeling(view: String) -> some View {
-        switch view {
-        case "happy":
-            FinalView(messagesFinal: ["feel","happy"])
-        case "sad":
-            FinalView(messagesFinal: ["feel","sad"])
-        case "sick":
-            FinalView(messagesFinal: ["feel","sick"])
-        case "angry":
-            FinalView(messagesFinal: ["feel","angry"])
-        case "tired":
-            FinalView(messagesFinal: ["feel","tired"])
-        default:
-            FinalView(messagesFinal: ["feel","happy","tired"])
-        }
-    }
     
     var body: some View {
         
@@ -48,7 +32,7 @@ struct FeelView: View {
             }
             
                 ScrollView(showsIndicators: false){
-                    VStack(alignment: .center, spacing: 30) { 
+                    VStack(alignment: .center, spacing: 30) {
                         
                         ForEach(UserStore().feels,id: \.self) {  feel in
                             NavigationLink(destination: getFeeling(view: feel.title)) {
@@ -75,6 +59,25 @@ struct FeelView: View {
             
         }
     }
+    
+    
+    @ViewBuilder func getFeeling(view: String) -> some View {
+        switch view {
+        case "happy":
+            FinalView(messagesFinal: ["feel","happy"])
+        case "sad":
+            FinalView(messagesFinal: ["feel","sad"])
+        case "sick":
+            FinalView(messagesFinal: ["feel","sick"])
+        case "angry":
+            FinalView(messagesFinal: ["feel","angry"])
+        case "tired":
+            FinalView(messagesFinal: ["feel","tired"])
+        default:
+            FinalView(messagesFinal: ["feel","happy","tired"])
+        }
+    }
+
 }
 struct FeelView_Previews: PreviewProvider {
     static var previews: some View {
