@@ -22,42 +22,28 @@ struct CardModel: View {
         VStack{
             
             ZStack{
-                  
-                    
-                   
-            Rectangle()
-                .frame(width: 320, height: 90, alignment: .center)
-                .cornerRadius(20)
-                .foregroundColor(.random())
-                .shadow(radius: 5)
-                .overlay {
-                    Text(title)
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding(.leading, 120)
-                }
-                .overlay{
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "heart")
-                            .imageScale(.large)
+                
+                Rectangle()
+                    .frame(width: 320, height: 90, alignment: .center)
+                    .cornerRadius(20)
+                    .foregroundColor(.random())
+                    .shadow(radius: 5)
+                    .overlay {
+                        Text(title)
+                            .font(.largeTitle)
+                            .fontWeight(.semibold)
                             .foregroundColor(.white)
-                            .position(x:300, y: 20)
-                        
+                            .padding(.leading, 120)
                     }
-                }
-                      Image(image)
-                    //prova
-                          .resizable()
-                          .scaledToFit()
-                          .cornerRadius(20)
-                          .frame(width: 90, height: 90, alignment: .center)
-                          .padding(.trailing, 230)
-                  }
+                Image(image)
+                    .resizable()
+                    .scaledToFill()
+                    .cornerRadius(20)
+                    .frame(width: 90, height: 90, alignment: .center)
+                    .padding(.trailing, 230)
             }
         }
+    }
     
 }
 
