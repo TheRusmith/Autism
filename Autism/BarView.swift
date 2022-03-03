@@ -70,13 +70,17 @@ struct BarView: View {
     case "Feel":
         BarView(messages: ["feel"])
     case "WantView":
-        BarView(messages: ["iwant"])
-    case "Go":
-        BarView(messages: ["iwant","chips"])
-    case "Play":
         BarView(messages: ["want"])
-    case "People":
-        BarView(messages: ["want"])
+    case "WantEat":
+        BarView(messages: ["want","burger"])
+    case "WantDrink":
+        BarView(messages: ["want","climbing"])
+    case "WantPlay":
+        BarView(messages: ["want","ball"])
+    case "WantGo":
+        BarView(messages: ["want","park"])
+    case "WantPeople":
+        BarView(messages: ["want","dad"])
     default:
         BarView(messages: ["want"])
     }

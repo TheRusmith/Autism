@@ -12,7 +12,7 @@ struct WantEatView: View {
         
         VStack{
             HStack {
-                updateBarView(view: "WantEatView")
+                updateBarView(view: "WantEat")
                     .padding(.top, 21)
             }
 

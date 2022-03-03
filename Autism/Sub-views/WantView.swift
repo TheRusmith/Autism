@@ -28,7 +28,6 @@ struct WantView: View {
     var body: some View {
         
         VStack{
-          
             HStack {
                 updateBarView(view: "WantView")
                     .padding(.top, 21)

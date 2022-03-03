@@ -14,7 +14,7 @@ struct WantPlayView: View {
         VStack{
            
             HStack {
-                updateBarView(view: "Play")
+                updateBarView(view: "WantPlay")
                     .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){

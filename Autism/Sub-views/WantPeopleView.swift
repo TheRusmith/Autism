@@ -14,7 +14,7 @@ struct WantPeopleView: View {
        // updateBarView(view: "People")
         VStack{
             HStack {
-                updateBarView(view: "Feel")
+                updateBarView(view: "WantPeople")
                     .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){

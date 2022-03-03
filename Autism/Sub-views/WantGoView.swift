@@ -12,7 +12,7 @@ struct WantGoView: View {
         
         VStack{
             HStack {
-                updateBarView(view: "Go")
+                updateBarView(view: "WantGo")
                     .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){

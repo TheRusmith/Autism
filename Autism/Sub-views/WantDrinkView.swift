@@ -13,7 +13,7 @@ struct WantDrinkView: View {
         VStack{
 //            updateBarView(view: "Drink")
             HStack {
-                updateBarView(view: "WantDrinkView")
+                updateBarView(view: "WantDrink")
                     .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){
