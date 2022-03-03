@@ -15,6 +15,11 @@ struct FinalView: View {
                 BarView(messages: messagesFinal)
     //            Text("ViewFinale")
             }
+            HStack {
+                
+                Text("This is your final message")
+                
+            }
         }
 
         
