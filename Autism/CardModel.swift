@@ -38,8 +38,8 @@ struct CardModel: View {
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .cornerRadius(20)
                     .frame(width: 90, height: 90, alignment: .center)
+                    .cornerRadius(20)
                     .padding(.trailing, 230)
             }
         }
