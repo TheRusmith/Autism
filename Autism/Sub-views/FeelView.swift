@@ -35,13 +35,13 @@ struct FeelView: View {
                     VStack(alignment: .center, spacing: 30) {
                         
                         ForEach(UserStore().feels,id: \.self) {  feel in
-                            NavigationLink(destination: getFeeling(view: feel.title)) {
+                            NavigationLink(destination: getFeeling(view: feel.imageName)) {
                                 CardModel(title: feel.title,image: feel.imageName)
                                 
                             }
-//                            .onTapGesture {
-//                                speechTalk(title: feel.title)
-//                            }
+                            .onTapGesture {
+                                speechTalk(title: feel.imageName)
+                            }
                         }
                     }
                     .padding(.top, 9)
