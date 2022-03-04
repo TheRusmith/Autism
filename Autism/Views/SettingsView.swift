@@ -9,11 +9,12 @@ import SwiftUI
 
 struct SettingsView : View {
     @State private var preselectedIndex = 0
-    @State private var voice = ["Male", "Female"]
+    @State private var voices = ["Male", "Female"]
     @State var username: String = ""
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
-    var frameworks = ["English", "Italian", "Chinese", "Spanish"]
-    @State private var selectedFrameworkIndex = 0
+    var languages = ["English", "Italian", "Chinese", "Spanish"]
+    @State private var selectedVoice = ""
+    @State private var selectedLanguage = ""
     let defaults = UserDefaults.standard
 //    defaults.set(22, forKey: "userAge")
     var darkModeEnabled = true
@@ -72,10 +73,9 @@ struct SettingsView : View {
                    .font(.title)
                    .foregroundColor(.red)
             
-            Picker("City", selection: $preselectedIndex) {
-                            ForEach(0..<voice.count) { index in
-                                Text(voice[index])
-                                    .tag(index)
+            Picker("City", selection: $selectedVoice) {
+                ForEach(voices,id: \.self) {
+                        Text($0)
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
@@ -89,10 +89,10 @@ struct SettingsView : View {
                    .font(.title)
                    .foregroundColor(.red)
             
-            Picker(selection: $selectedFrameworkIndex, label: Text("")) {
-                        ForEach(0 ..< frameworks.count) {
-                           Text(self.frameworks[$0])
-                        }
+            Picker(selection: $selectedLanguage, label: Text("")) {
+                ForEach(languages,id: \.self) {
+                    Text($0)
+                }
                      }
             .pickerStyle(SegmentedPickerStyle())
 //            Spacer()

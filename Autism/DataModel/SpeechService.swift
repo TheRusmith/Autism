@@ -21,4 +21,7 @@ class SpeechService {
         //synthesizer has other variables you can change in settings
         
     }
+    func changeLanguage(selectedLanguage: String) {
+        language = selectedLanguage
+    }
 }
