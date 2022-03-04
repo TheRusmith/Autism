@@ -10,6 +10,7 @@ import SwiftUI
 struct BarView: View {
     
     @State var messages = [String]()
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 //    let title : String
 //    let image : String
    
@@ -36,11 +37,15 @@ struct BarView: View {
                                         Spacer()
                                       //BUG APPARE SOLO ULTIMA CARD
                                         ForEach(messages,id: \.self) { message in
-                                            SmallcardImage(title: message,image: message)
-                                                .padding(25)
+                                            SmallcardImage(title: message, image: message.lowercased())
+                                                .padding(15)
 //                                            Text("-")
 //                                                .font(.system(size: 30.0, weight: .bold))
                                             Spacer()
+                                        }
+                                        
+                                        SmallcardImage(title:"Back", image: "arrow").onTapGesture {
+                                            self.presentationMode.wrappedValue.dismiss()
                                         }
                                         
                                     }
@@ -71,7 +76,7 @@ struct BarView: View {
     case "WantDrink":
         BarView(messages: ["want","climbing"])
     case "WantPlay":
-        BarView(messages: ["want","ball"])
+        BarView(messages: ["want","play"])
     case "WantGo":
         BarView(messages: ["want","park"])
     case "WantPeople":
@@ -87,3 +92,4 @@ struct BarView_Previews: PreviewProvider {
          
     }
 }
+

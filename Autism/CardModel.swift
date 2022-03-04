@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CardModel: View {
     
-    let title : String
-    let image : String
-    internal init(title: String ,image: String ) {
+    let title: String
+    let image: String
+    
+    internal init(title: String, image: String ) {
         
         self.title = title
         self.image = image
