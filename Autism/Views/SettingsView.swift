@@ -55,11 +55,12 @@ struct SettingsView : View {
                 .frame(width: 20, height: 30)
                 .opacity(0)
             
-        TextField("Nickname", text: $username)
+        TextField("Rodolfo", text: $username)
                 .frame(width: 300, height: 20)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(15)
+            .multilineTextAlignment(.center)
             .padding(.bottom, 20)
             
             Rectangle()
