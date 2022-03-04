@@ -11,11 +11,8 @@ struct BarView: View {
     
     @State var messages = [String]()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-//    let title : String
-//    let image : String
-   
-    
-    
+    //    let title : String
+    //    let image : String
     // @EnvironmentObject  var userStore: UserStore
     var body: some View {
         
@@ -25,30 +22,6 @@ struct BarView: View {
                 .foregroundColor(Color.red)
                 .shadow(radius: 15)
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             ZStack{
                 
                 Rectangle()
@@ -57,50 +30,40 @@ struct BarView: View {
                     .opacity(0.8)
                     .padding(.top, 20)
                     .padding(.trailing, 90)
-            HStack{
-                HStack(spacing: 40){
-                    ForEach(messages,id: \.self) { message in
-                        SmallcardImage(title: message, image: message.lowercased())
+                HStack{
+                    HStack(spacing: 40){
+                        ForEach(messages,id: \.self) { message in
+                            SmallcardImage(title: message, image: message.lowercased())
+                        }
+                        Spacer()
                     }
+                    .frame(width: 313, height: 90)
+                    .padding(.leading, 14)
+                    
                     Spacer()
+                    
+                    Rectangle()
+                        .frame(width: 1, height: 90)
+                    
+                    Spacer()
+                    
+                    //                SmallcardImage(title:"Back", image: "arrow")
+                    
+                    Image("arrow")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.white)
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(10)
+                        .onTapGesture {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                    
+                    Spacer()
+                    
                 }
-                .frame(width: 313, height: 90)
-                .padding(.leading, 14)
-                
-                Spacer()
-                
-                Rectangle()
-                    .frame(width: 1, height: 90)
-                
-                Spacer()
-                
-//                SmallcardImage(title:"Back", image: "arrow")
-                Image("arrow")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(.white)
-                    .frame(width: 60, height: 60)
-                    .cornerRadius(10)
-                    .onTapGesture {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }
-                
-                Spacer()
-                
+                .padding(.top, 42)
             }
-            .padding(.top, 42)
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
