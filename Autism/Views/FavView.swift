@@ -7,22 +7,25 @@
 
 import SwiftUI
 import AVFoundation
+
 struct FavView: View {
     let speechService = SpeechService()
-
-    
-    
     
     var body: some View {
+        
         NavigationView {
-                   VStack {
-                       NavigationLink(destination: FeelView()) {
-                           Text("Do Something")
-                       }
-                   }
-               }
+            ScrollView(.vertical) {
+                NavigationLink(destination: FinalView()) {
+                    Text("Do Something")
+                }
+            }
+            .frame(width: .infinity, height: .infinity)
+            
+            .foregroundColor(.red)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Favorites")
+        }
     }
-    
 }
 
 struct FavView_Previews: PreviewProvider {
