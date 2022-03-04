@@ -48,7 +48,7 @@
 		2678D7D127BE64D7006A13E5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		2694F13727C4E9720063111C /* DataInizialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInizialization.swift; sourceTree = "<group>"; };
 		26F3146327CF6FB00092F3AD /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
-		5A0F850627BCEBE9004592D9 /* Autism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autism.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0F850627BCEBE9004592D9 /* ListenToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0F850927BCEBE9004592D9 /* AutismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutismApp.swift; sourceTree = "<group>"; };
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		5A0F850727BCEBE9004592D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A0F850627BCEBE9004592D9 /* Autism.app */,
+				5A0F850627BCEBE9004592D9 /* ListenToMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A0F850527BCEBE9004592D9 /* Autism */ = {
+		5A0F850527BCEBE9004592D9 /* ListenToMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A0F851927BCEBEA004592D9 /* Build configuration list for PBXNativeTarget "Autism" */;
+			buildConfigurationList = 5A0F851927BCEBEA004592D9 /* Build configuration list for PBXNativeTarget "ListenToMe" */;
 			buildPhases = (
 				5A0F850227BCEBE9004592D9 /* Sources */,
 				5A0F850327BCEBE9004592D9 /* Frameworks */,
@@ -192,9 +192,9 @@
 			);
 			dependencies = (
 			);
-			name = Autism;
+			name = ListenToMe;
 			productName = Autism;
-			productReference = 5A0F850627BCEBE9004592D9 /* Autism.app */;
+			productReference = 5A0F850627BCEBE9004592D9 /* ListenToMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A0F850127BCEBE9004592D9 /* Build configuration list for PBXProject "Autism" */;
+			buildConfigurationList = 5A0F850127BCEBE9004592D9 /* Build configuration list for PBXProject "ListenToMe" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,7 +225,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A0F850527BCEBE9004592D9 /* Autism */,
+				5A0F850527BCEBE9004592D9 /* ListenToMe */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +420,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mariano.Autism;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ListenToMe;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +450,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mariano.Autism;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ListenToMe;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,7 +460,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A0F850127BCEBE9004592D9 /* Build configuration list for PBXProject "Autism" */ = {
+		5A0F850127BCEBE9004592D9 /* Build configuration list for PBXProject "ListenToMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A0F851727BCEBEA004592D9 /* Debug */,
@@ -469,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A0F851927BCEBEA004592D9 /* Build configuration list for PBXNativeTarget "Autism" */ = {
+		5A0F851927BCEBEA004592D9 /* Build configuration list for PBXNativeTarget "ListenToMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A0F851A27BCEBEA004592D9 /* Debug */,
