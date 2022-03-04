@@ -26,7 +26,7 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
                                     Want(title:"Go",imageName: "go"),
                                     Want(title:"People",imageName: "people")]
     
-    @Published var wantplay: [WantPlay] = [WantPlay(title: "Football",imageName: "ball"),
+    @Published var wantplay: [WantPlay] = [WantPlay(title: "Football",imageName: "football"),
                                            WantPlay(title: "Soap bubbles",imageName: "soap bubbles"),
                                            WantPlay(title: "Balloons",imageName: "balloons"),
                                            WantPlay(title: "Basketball",imageName: "basketball"),
@@ -41,12 +41,12 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
                                          WantEat(title:"Chocolate",imageName: "chocolate"),
                                          WantEat(title:"Cotton Candy",imageName: "cottoncandy")]
     
-    @Published var wantdrink : [WantDrink] = [WantDrink(title: "Coca",imageName: "cola"),
+    @Published var wantdrink : [WantDrink] = [WantDrink(title:"Water",imageName: "water"),
+                                              WantDrink(title: "Coca",imageName: "coca"),
                                               WantDrink(title:"Fanta",imageName: "fanta"),
-                                              WantDrink(title:"Water",imageName: "water"),
                                               WantDrink(title:"Juice",imageName: "juice"),
                                               WantDrink(title:"Sprite",imageName: "sprite"),
-                                              WantDrink(title:"Lemonade",imageName: "limonata")]
+                                              WantDrink(title:"Lemonade",imageName: "lemonade")]
     
     @Published var wantgo : [WantGo] = [WantGo(title: "Playground",imageName: "playground"),
                                         WantGo(title:"Cinema",imageName: "cinema"),
