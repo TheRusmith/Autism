@@ -36,7 +36,7 @@ struct FeelView: View {
                         
                         ForEach(UserStore().feels,id: \.self) {  feel in
                             NavigationLink(destination: getFeeling(view: feel.imageName)) {
-                                CardModel(title: feel.title,image: feel.imageName)
+                                CardModelFav(title: feel.title,image: feel.imageName)
                                 
                             }
                             .onTapGesture {

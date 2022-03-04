@@ -21,7 +21,7 @@ struct WantDrinkView: View {
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantdrink,id: \.self) { WantDrink in
                             NavigationLink(destination: FinalView(messagesFinal: ["want", "drink", WantDrink.title] )) {
-                                CardModel(title: WantDrink.title,image: WantDrink.imageName)
+                                CardModelFav(title: WantDrink.title,image: WantDrink.imageName)
                             }
                         }
                     }

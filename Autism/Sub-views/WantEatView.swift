@@ -23,7 +23,7 @@ struct WantEatView: View {
                             
                             NavigationLink(destination: FinalView(messagesFinal: ["want", "eat", WantEat.title] )) {
                                 
-                                CardModel(title: WantEat.title,image: WantEat.imageName)
+                                CardModelFav(title: WantEat.title,image: WantEat.imageName)
                             }
                             
                         }
