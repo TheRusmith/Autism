@@ -91,6 +91,7 @@ struct HomeView: View {
                                 .scaledToFill()
                                 .background(.white)
                                 .cornerRadius(20)
+                                .padding(5)
                                 .frame(width: 90, height: 90, alignment: .center)
                                 .padding(.trailing, 230)
                         }
@@ -121,6 +122,7 @@ struct HomeView: View {
                                 .scaledToFill()
                                 .background(.white)
                                 .cornerRadius(20)
+                                .padding(5)
                                 .frame(width: 90, height: 90, alignment: .center)
                                 .padding(.trailing, 230)
                         }
