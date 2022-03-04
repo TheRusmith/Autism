@@ -18,21 +18,20 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
                                     Feel(title: "Tired", imageName: "tired"),
                                     Feel(title: "Sick", imageName: "sick"),
                                     Feel(title: "Angry", imageName: "angry"),
-                                    Feel(title: "Sad", imageName: "sad"),
-                                    Feel(title: "Back",imageName:"arrow")]
+                                    Feel(title: "Sad", imageName: "sad")]
     
-    @Published var wants: [Want] = [Want(title: "Eat",imageName: "burger"),
-                                    Want(title:"Drink",imageName: "climbing"),
-                                    Want(title:"Play",imageName: "ball"),
-                                    Want(title:"Go",imageName: "playground"),
-                                    Want(title:"Back",imageName: "arrow")]
+    @Published var wants: [Want] = [Want(title: "Eat",imageName: "eat"),
+                                    Want(title:"Drink",imageName: "drink"),
+                                    Want(title:"Play",imageName: "play"),
+                                    Want(title:"Go",imageName: "go"),
+                                    Want(title:"People",imageName: "people")]
     
     @Published var wantplay: [WantPlay] = [WantPlay(title: "Football",imageName: "ball"),
-                                           WantPlay(title: "Soap bubbles",imageName: "penguin"),
+                                           WantPlay(title: "Soap bubbles",imageName: "soap bubbles"),
                                            WantPlay(title: "Balloons",imageName: "balloons"),
                                            WantPlay(title: "Basketball",imageName: "basketball"),
                                            WantPlay(title: "Puzzle",imageName: "puzzle"),
-                                           WantPlay(title: "Climbing Stairs",imageName: "climbing")]
+                                           WantPlay(title: "Climbing Stairs",imageName: "climbing stairs")]
     
     
     @Published var wanteat: [WantEat] = [WantEat(title: "Burger",imageName: "burger"),

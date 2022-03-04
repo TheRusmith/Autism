@@ -27,7 +27,7 @@ struct FeelView: View {
         
         VStack{
             HStack {
-                updateBarView(view: "Feel")
+                BarView(messages: ["feel"])
                     .padding(.top, 21)
             }
             

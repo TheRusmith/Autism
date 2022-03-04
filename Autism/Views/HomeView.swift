@@ -95,7 +95,7 @@ struct HomeView: View {
                                 .padding(.trailing, 230)
                         }
                 })
-            })
+        })
 
                 Button(action: {
                     speechService.say("i want ")

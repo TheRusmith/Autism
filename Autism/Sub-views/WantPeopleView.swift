@@ -14,13 +14,13 @@ struct WantPeopleView: View {
        // updateBarView(view: "People")
         VStack{
             HStack {
-                updateBarView(view: "WantPeople")
+                BarView(messages: ["want","people"])
                     .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
                         ForEach(UserStore().wantpeople,id: \.self) { WantPeople in
-                            NavigationLink(destination: FinalView()) {
+                            NavigationLink(destination: FinalView(messagesFinal: ["want", "people", WantPeople.title] )) {
                                 CardModel(title: WantPeople.title,image: WantPeople.imageName)
                             }
                         }

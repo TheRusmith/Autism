@@ -17,6 +17,8 @@ struct WantView: View {
             WantGoView()
         case "Play":
             WantPlayView()
+        case "People":
+            WantPeopleView()
         case "Back":
             HomeView()
         default:
@@ -29,7 +31,7 @@ struct WantView: View {
         
         VStack{
             HStack {
-                updateBarView(view: "WantView")
+                BarView(messages: ["want"])
                     .padding(.top, 21)
             }
              
