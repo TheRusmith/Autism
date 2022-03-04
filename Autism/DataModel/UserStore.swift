@@ -36,7 +36,7 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
     
     @Published var wanteat: [WantEat] = [WantEat(title: "Burger",imageName: "burger"),
                                          WantEat(title:"Pizza",imageName: "pizza"),
-                                         WantEat(title:"Ice Cream",imageName: "icecream"),
+                                         WantEat(title:"Ice Cream",imageName: "ice cream"),
                                          WantEat(title:"Chips",imageName: "chips"),
                                          WantEat(title:"Chocolate",imageName: "chocolate"),
                                          WantEat(title:"Cotton Candy",imageName: "cotton candy")]
