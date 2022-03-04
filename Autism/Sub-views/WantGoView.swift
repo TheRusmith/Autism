@@ -30,7 +30,7 @@ struct WantGoView: View {
                 .navigationBarHidden(true)
 
         }  .onAppear {
-            speechservice.say("Io want go ")
+            speechservice.say("go ")
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
