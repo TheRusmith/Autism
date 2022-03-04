@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct AutismApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            Navigation()
+            HomeView()
                 .environmentObject(UserStore())
         }
     }

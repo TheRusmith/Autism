@@ -19,7 +19,6 @@
 		5A0F850E27BCEBEA004592D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F850D27BCEBEA004592D9 /* Assets.xcassets */; };
 		5A0F851127BCEBEA004592D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */; };
 		5A0F851327BCEBEA004592D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F851227BCEBEA004592D9 /* Persistence.swift */; };
-		5A0F851627BCEBEA004592D9 /* Autism.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F851427BCEBEA004592D9 /* Autism.xcdatamodeld */; };
 		5A0F851D27BE3D6E004592D9 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F851C27BE3D6E004592D9 /* NavigationView.swift */; };
 		5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F851E27BE3D7F004592D9 /* HomeView.swift */; };
 		5A0F852127BE3D89004592D9 /* FavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F852027BE3D89004592D9 /* FavView.swift */; };
@@ -54,7 +53,6 @@
 		5A0F850D27BCEBEA004592D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A0F851227BCEBEA004592D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		5A0F851527BCEBEA004592D9 /* Autism.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autism.xcdatamodel; sourceTree = "<group>"; };
 		5A0F851C27BE3D6E004592D9 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		5A0F851E27BE3D7F004592D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5A0F852027BE3D89004592D9 /* FavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavView.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				5A0F851227BCEBEA004592D9 /* Persistence.swift */,
-				5A0F851427BCEBEA004592D9 /* Autism.xcdatamodeld */,
 				5A0F851027BCEBEA004592D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -277,7 +274,6 @@
 				2678D7C827BE50EF006A13E5 /* Image&Extension.swift in Sources */,
 				C1506E9327CED99900BC4414 /* WantPlayView.swift in Sources */,
 				5A0F851F27BE3D7F004592D9 /* HomeView.swift in Sources */,
-				5A0F851627BCEBEA004592D9 /* Autism.xcdatamodeld in Sources */,
 				5A0F850A27BCEBE9004592D9 /* AutismApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,19 +479,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5A0F851427BCEBEA004592D9 /* Autism.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5A0F851527BCEBEA004592D9 /* Autism.xcdatamodel */,
-			);
-			currentVersion = 5A0F851527BCEBEA004592D9 /* Autism.xcdatamodel */;
-			path = Autism.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5A0F84FE27BCEBE9004592D9 /* Project object */;
 }
