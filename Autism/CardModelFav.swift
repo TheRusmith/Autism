@@ -20,7 +20,7 @@ struct CardModelFav: View {
     var body: some View {
         
         VStack{
-            
+            HStack{
             ZStack{
                 
             Rectangle()
@@ -35,22 +35,23 @@ struct CardModelFav: View {
                             .foregroundColor(.white)
                             .padding(.leading, 120)
                     }
-                    .overlay{
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "heart")
-                                .imageScale(.large)
-                                .foregroundColor(.white)
-                                .position(x:300, y: 20)
-                        }
-                    }
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "heart")
+                        .imageScale(.large)
+                        .foregroundColor(.white)
+                }
+                    
                 Image(image)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 90, height: 90, alignment: .center)
                     .cornerRadius(20)
                     .padding(.trailing, 230)
+                
+            }
             }
         }
     }
