@@ -17,38 +17,46 @@ struct BarView: View {
     var body: some View {
         
         ZStack{
+            
             Rectangle()
-                .frame(width: 414, height: 180, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width, height: 180, alignment: .center)
                 .foregroundColor(Color.red)
                 .shadow(radius: 15)
             
-            ZStack{
+            HStack{
                 
-                Rectangle()
-                    .frame(width: 313, height: 10)
-                    .cornerRadius(10)
-                    .opacity(0.8)
-                    .padding(.top, 20)
-                    .padding(.trailing, 90)
+                Spacer()
+                
                 HStack{
-                    HStack(spacing: 40){
-                        ForEach(messages,id: \.self) { message in
-                            SmallcardImage(title: message, image: message.lowercased())
+                    ZStack{
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.7, height: 10)
+                            .cornerRadius(15)
+                        
+                        HStack(spacing: 30){
+                            ForEach(messages,id: \.self) { message in
+                                SmallcardImage(title: message, image: message.lowercased())
+                            }
+                            Spacer()
+                                
                         }
-                        Spacer()
+                        .padding(.leading, 14)
                     }
-                    .frame(width: 313, height: 90)
-                    .padding(.leading, 14)
                     
-                    Spacer()
-                    
+                }
+                .frame(width: UIScreen.main.bounds.width*0.750, height: 138)
+                
+                Spacer()
+                
+                HStack{
                     Rectangle()
                         .frame(width: 1, height: 90)
-                    
-                    Spacer()
-                    
-                    //                SmallcardImage(title:"Back", image: "arrow")
-                    
+                }
+                .frame(width: UIScreen.main.bounds.width*0.02, height: 138)
+                
+                Spacer()
+                
+                HStack{
                     Image("arrow")
                         .resizable()
                         .scaledToFit()
@@ -58,12 +66,13 @@ struct BarView: View {
                         .onTapGesture {
                             self.presentationMode.wrappedValue.dismiss()
                         }
-                    
-                    Spacer()
-                    
                 }
-                .padding(.top, 42)
+                .frame(width: UIScreen.main.bounds.width*0.18, height: 138)
+                
+                Spacer()
+                
             }
+            .padding(.top, 42)
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
