@@ -15,10 +15,15 @@ struct WantDrinkView: View {
             HStack {
                 BarView(messages: ["want","drink"])
 //                updateBarView(view: "WantDrink")
-                    .padding(.top, 21)
+//                    .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
+                        
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.00001)
+                            .opacity(0)
+                        
                         ForEach(UserStore().wantdrink,id: \.self) { WantDrink in
                             NavigationLink(destination: FinalView(messagesFinal: ["want", "drink", WantDrink.title] )) {
                                 CardModelFav(title: WantDrink.title,image: WantDrink.imageName)

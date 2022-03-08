@@ -28,11 +28,15 @@ struct FeelView: View {
         VStack{
             HStack {
                 BarView(messages: ["feel"])
-                    .padding(.top, 21)
+//                    .padding(.top, 21)
             }
             
                 ScrollView(showsIndicators: false){
                     VStack(alignment: .center, spacing: 30) {
+                        
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.00001)
+                            .opacity(0)
                         
                         ForEach(UserStore().feels,id: \.self) {  feel in
                             NavigationLink(destination: getFeeling(view: feel.imageName)) {
@@ -49,7 +53,6 @@ struct FeelView: View {
                     .padding(.trailing, 9)
                 }
                 .navigationBarHidden(true)
-
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)

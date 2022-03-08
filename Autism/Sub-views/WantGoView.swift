@@ -13,10 +13,15 @@ struct WantGoView: View {
         VStack{
             HStack {
                 BarView(messages: ["want","go"])
-                    .padding(.top, 21)
+//                    .padding(.top, 21)
             }
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
+                        
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.00001)
+                            .opacity(0)
+                        
                         ForEach(UserStore().wantgo,id: \.self) { WantGo in
                             NavigationLink(destination: FinalView(messagesFinal: ["want", "go", WantGo.title] )) {
                                 CardModelFav(title: WantGo.title,image: WantGo.imageName)

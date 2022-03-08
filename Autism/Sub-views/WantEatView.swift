@@ -14,11 +14,16 @@ struct WantEatView: View {
             HStack {
                 BarView(messages: ["want","eat"])
 //                updateBarView(view: "WantEat")
-                    .padding(.top, 21)
+//                    .padding(.top, 21)
             }
 
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
+                        
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.00001)
+                            .opacity(0)
+                        
                         ForEach(UserStore().wanteat, id: \.self) { WantEat in
                             
                             NavigationLink(destination: FinalView(messagesFinal: ["want", "eat", WantEat.title] )) {

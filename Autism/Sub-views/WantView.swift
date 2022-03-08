@@ -32,12 +32,17 @@ struct WantView: View {
         VStack{
             HStack {
                 BarView(messages: ["want"])
-                    .padding(.top, 21)
+//                    .padding(.top, 21)
             }
              
 //            NavigationView{
                 ScrollView(showsIndicators: false){
                     VStack(alignment: . center, spacing: 30) {
+                        
+                        Rectangle()
+                            .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.00001)
+                            .opacity(0)
+                        
                         ForEach(UserStore().wants, id: \.self) { want in
                             
                             NavigationLink(destination: getView(view: want.title)) {
