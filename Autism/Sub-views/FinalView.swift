@@ -28,7 +28,7 @@ struct FinalView: View {
                             speechservice.say(messagesFinal.last!)
                         } label: {
                             Rectangle()
-                                .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)
                                 .cornerRadius(20)
                                 .foregroundColor(.random())
                                 .shadow(radius: 5)
@@ -40,7 +40,7 @@ struct FinalView: View {
                                         .padding(.leading, 120)
                                     Rectangle()
                                         .foregroundColor(.white)
-                                        .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                        .frame(width: UIScreen.main.bounds.width*0.220, height: UIScreen.main.bounds.height*0.1)
                                         .cornerRadius(20)
                                         .padding(.trailing, 230)
                                     Image(systemName: "speaker.wave.3.fill")
@@ -60,7 +60,7 @@ struct FinalView: View {
                             speechservice.say(messagesFinal.last!)
                         } label: {
                             Rectangle()
-                                .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)
                                 .cornerRadius(20)
                                 .foregroundColor(.random())
                                 .shadow(radius: 5)
@@ -72,7 +72,7 @@ struct FinalView: View {
                                         .padding(.leading, 120)
                                     Rectangle()
                                         .foregroundColor(.white)
-                                        .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                        .frame(width: UIScreen.main.bounds.width*0.220, height: UIScreen.main.bounds.height*0.1)
                                         .cornerRadius(20)
                                         .padding(.trailing, 230)
                                     Image(systemName: "square.and.arrow.up")
@@ -90,7 +90,7 @@ struct FinalView: View {
                         
                         NavigationLink(
                             destination: HomeView()){Rectangle()
-                                    .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                    .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)
                                     .cornerRadius(20)
                                     .foregroundColor(.random())
                                     .shadow(radius: 5)
@@ -102,7 +102,7 @@ struct FinalView: View {
                                             .padding(.leading, 120)
                                         Rectangle()
                                             .foregroundColor(.white)
-                                            .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                            .frame(width: UIScreen.main.bounds.width*0.220, height: UIScreen.main.bounds.height*0.1)
                                             .cornerRadius(20)
                                             .padding(.trailing, 230)
                                         Image(systemName: "house.fill")

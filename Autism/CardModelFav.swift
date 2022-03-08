@@ -24,7 +24,7 @@ struct CardModelFav: View {
             ZStack{
                 
             Rectangle()
-                    .frame(width: 320, height: 90, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width*0.770, height: 90, alignment: .center)
                     .cornerRadius(20)
                     .foregroundColor(.random())
                     .shadow(radius: 5)
@@ -36,18 +36,18 @@ struct CardModelFav: View {
                             .padding(.leading, 120)
                     }
                 
-                Button {
-                    
-                } label: {
-                    Image(systemName: "heart")
-                        .imageScale(.large)
-                        .foregroundColor(.white)
-                }
+//                Button {
+//
+//                } label: {
+//                    Image(systemName: "heart")
+//                        .imageScale(.large)
+//                        .foregroundColor(.white)
+//                }
                     
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 90, height: 90, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width*0.220, height: 90, alignment: .center)
                     .cornerRadius(20)
                     .padding(.trailing, 230)
                 

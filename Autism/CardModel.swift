@@ -25,7 +25,7 @@ struct CardModel: View {
             ZStack{
                 
                 Rectangle()
-                    .frame(width: 320, height: 90, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)
                     .cornerRadius(20)
                     .foregroundColor(.random())
                     .shadow(radius: 5)
@@ -39,7 +39,7 @@ struct CardModel: View {
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 90, height: 90, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width*0.220, height: 90, alignment: .center)
                     .cornerRadius(20)
                     .padding(.trailing, 230)
             }
