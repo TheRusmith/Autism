@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FinalView: View {
+    
 //    @State var showHomeView: Bool = false
     @State var messagesFinal = [String]()
     var body: some View {
@@ -120,9 +121,9 @@ struct FinalView: View {
             }
             Spacer()
         }
-        
+        .navigationBarHidden(true)
     }
-    //        .navigationBarHidden(true)
+
 }
 
 struct FinalView_Previews: PreviewProvider {
