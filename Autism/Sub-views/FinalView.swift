@@ -12,7 +12,6 @@ struct FinalView: View {
 //    @State var showHomeView: Bool = false
     @State var messagesFinal = [String]()
     var body: some View {
-        NavigationView{
             let speechservice = SpeechService()
             VStack{
                 HStack{
@@ -120,7 +119,7 @@ struct FinalView: View {
                 Spacer()
             }
             Spacer()
-        }
+        
         .navigationBarHidden(true)
     }
 
