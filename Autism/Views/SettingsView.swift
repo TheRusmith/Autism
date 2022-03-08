@@ -13,8 +13,11 @@ struct SettingsView : View {
     @State var username: String = ""
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
     var languages = ["English", "Italian", "Chinese", "Spanish"]
-    @State private var selectedVoice = ""
-    @State private var selectedLanguage = ""
+//    @State private var selectedVoice = ""
+//    @State private var selectedLanguage = ""
+    @AppStorage("name") private var name = "Nicola"
+    @AppStorage("selectedLanguage") private var language = "English"
+    @AppStorage("selectedVoice") private var voice = "Male"
     let defaults = UserDefaults.standard
 //    defaults.set(22, forKey: "userAge")
     var darkModeEnabled = true
@@ -56,7 +59,7 @@ struct SettingsView : View {
                 .frame(width: 20, height: 30)
                 .opacity(0)
             
-        TextField("Rodolfo", text: $username)
+        TextField("Insert your name ", text: $name)
                 .frame(width: 300, height: 20)
             .padding()
             .background(lightGreyColor)
@@ -73,7 +76,7 @@ struct SettingsView : View {
                    .font(.title)
                    .foregroundColor(.red)
             
-            Picker("City", selection: $selectedVoice) {
+            Picker(selection: $voice,label : Text("\(voice)")) {
                 ForEach(voices,id: \.self) {
                         Text($0)
                             }
@@ -89,7 +92,7 @@ struct SettingsView : View {
                    .font(.title)
                    .foregroundColor(.red)
             
-            Picker(selection: $selectedLanguage, label: Text("")) {
+            Picker(selection: $language, label: Text("\(language)")) {
                 ForEach(languages,id: \.self) {
                     Text($0)
                 }

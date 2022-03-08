@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct FinalView: View {
-    
+    let speechservice = SpeechService()
+    func repeatFinal (messages: [String]){
+        messages.forEach { message in
+            speechservice.say(message)
+        }
+    }
 //    @State var showHomeView: Bool = false
     @State var messagesFinal = [String]()
     var body: some View {
-            let speechservice = SpeechService()
+            
             VStack{
                 HStack{
                     BarView(messages: messagesFinal)
@@ -25,7 +30,7 @@ struct FinalView: View {
                     HStack{
                         
                         Button {
-                            speechservice.say(messagesFinal.last!)
+                            repeatFinal(messages: messagesFinal)
                         } label: {
                             Rectangle()
                                 .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)
