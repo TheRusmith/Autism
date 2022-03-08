@@ -8,30 +8,125 @@
 import SwiftUI
 
 struct FinalView: View {
+//    @State var showHomeView: Bool = false
     @State var messagesFinal = [String]()
     var body: some View {
-        let speechservice = SpeechService()
-        VStack{
-            HStack {
-                BarView(messages: messagesFinal)
-                    .onAppear{
-                        speechservice.say(messagesFinal.last!)
+        NavigationView{
+            let speechservice = SpeechService()
+            VStack{
+                HStack{
+                    BarView(messages: messagesFinal)
+                        .onAppear{
+                            speechservice.say(messagesFinal.last!)
+                        }
+                }
+                VStack(spacing: 30) {
+                    
+                    HStack{
+                        
+                        Button {
+                            speechservice.say(messagesFinal.last!)
+                        } label: {
+                            Rectangle()
+                                .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                .cornerRadius(20)
+                                .foregroundColor(.random())
+                                .shadow(radius: 5)
+                                .overlay {
+                                    Text("Read Again")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                        .padding(.leading, 120)
+                                    Rectangle()
+                                        .foregroundColor(.white)
+                                        .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                        .cornerRadius(20)
+                                        .padding(.trailing, 230)
+                                    Image(systemName: "speaker.wave.3.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundColor(.black)
+                                        .frame(width: 60, height: 60, alignment: .center)
+                                        .cornerRadius(20)
+                                        .padding(.trailing, 230)
+                                }
+                        }
                     }
-    //            Text("ViewFinale")
+                    
+                    HStack{
+                        
+                        Button {
+                            speechservice.say(messagesFinal.last!)
+                        } label: {
+                            Rectangle()
+                                .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                .cornerRadius(20)
+                                .foregroundColor(.random())
+                                .shadow(radius: 5)
+                                .overlay {
+                                    Text("Share")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                        .padding(.leading, 120)
+                                    Rectangle()
+                                        .foregroundColor(.white)
+                                        .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                        .cornerRadius(20)
+                                        .padding(.trailing, 230)
+                                    Image(systemName: "square.and.arrow.up")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundColor(.black)
+                                        .frame(width: 60, height: 60, alignment: .center)
+                                        .cornerRadius(20)
+                                        .padding(.trailing, 230)
+                                }
+                        }
+                    }
+                    
+                    HStack{
+                        
+                        NavigationLink(
+                            destination: HomeView()){Rectangle()
+                                    .frame(width: UIScreen.main.bounds.width*0.800, height: UIScreen.main.bounds.height*0.110)
+                                    .cornerRadius(20)
+                                    .foregroundColor(.random())
+                                    .shadow(radius: 5)
+                                    .overlay {
+                                        Text("Back Home")
+                                            .font(.largeTitle)
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(.white)
+                                            .padding(.leading, 120)
+                                        Rectangle()
+                                            .foregroundColor(.white)
+                                            .frame(width: UIScreen.main.bounds.width*0.25, height: UIScreen.main.bounds.height*0.11)
+                                            .cornerRadius(20)
+                                            .padding(.trailing, 230)
+                                        Image(systemName: "house.fill")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .foregroundColor(.black)
+                                            .frame(width: 60, height: 60, alignment: .center)
+                                            .cornerRadius(20)
+                                            .padding(.trailing, 230)
+                                    }
+                            }
+                    }
+                }
+                Spacer()
             }
-            HStack {
-                
-                Text("This is your final message")
-                
-            }
+            Spacer()
         }
-
         
     }
+    //        .navigationBarHidden(true)
 }
 
 struct FinalView_Previews: PreviewProvider {
     static var previews: some View {
-        FinalView()
+        FinalView(messagesFinal: ["sad","happy"])
     }
 }
