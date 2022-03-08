@@ -15,7 +15,7 @@ struct SettingsView : View {
     var languages = ["English", "Italian", "Chinese", "Spanish"]
 //    @State private var selectedVoice = ""
 //    @State private var selectedLanguage = ""
-    @AppStorage("name") private var name = "Nicola"
+    @AppStorage("name") private var name = "Nickname"
     @AppStorage("selectedLanguage") private var language = "English"
     @AppStorage("selectedVoice") private var voice = "Male"
     let defaults = UserDefaults.standard
