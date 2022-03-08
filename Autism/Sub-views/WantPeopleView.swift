@@ -30,7 +30,7 @@ struct WantPeopleView: View {
                             }
                         }
                     }
-                    .padding(.top, 9)
+//                    .padding(.top, 9)
                     .padding(.leading, 9)
                     .padding(.trailing, 9)
 
