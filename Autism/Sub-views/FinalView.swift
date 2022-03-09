@@ -14,10 +14,19 @@ struct FinalView: View {
             speechservice.say(message)
         }
     }
+    
+    func actionSheet(text: String) {
+        //guard let data = URL(string: "https://www.zoho.com") else {
+        let av = UIActivityViewController(activityItems: [text], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+    }
+    
 //    @State var showHomeView: Bool = false
     @State var messagesFinal = [String]()
     var body: some View {
-            
+        
+
+        
             VStack{
                 HStack{
                     BarView(messages: messagesFinal)
@@ -62,6 +71,7 @@ struct FinalView: View {
                     HStack{
                         
                         Button {
+                            actionSheet(text: "From ListenToMe: " + messagesFinal.joined(separator: " "))
                             
                         } label: {
                             Rectangle()
