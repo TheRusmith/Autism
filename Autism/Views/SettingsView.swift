@@ -12,10 +12,10 @@ struct SettingsView : View {
     @State private var voices = ["Male", "Female"]
     @State var username: String = ""
     let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
-    var languages = ["English", "Italian", "Chinese", "Spanish"]
+    @State var languages = ["English", "Italian"]
 //    @State private var selectedVoice = ""
 //    @State private var selectedLanguage = ""
-    @AppStorage("name") private var name = "Nicola"
+    @AppStorage("name") private var name = "Nickname"
     @AppStorage("selectedLanguage") private var language = "English"
     @AppStorage("selectedVoice") private var voice = "Male"
     let defaults = UserDefaults.standard

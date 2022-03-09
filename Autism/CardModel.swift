@@ -17,7 +17,7 @@ struct CardModel: View {
         self.title = title
         self.image = image
     }
-    
+
     var body: some View {
         
         VStack{
@@ -30,7 +30,7 @@ struct CardModel: View {
                     .foregroundColor(.random())
                     .shadow(radius: 5)
                     .overlay {
-                        Text(title)
+                        Text("\(title)")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)

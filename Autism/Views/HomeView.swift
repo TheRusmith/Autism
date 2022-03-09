@@ -57,7 +57,7 @@ struct HomeView: View {
             Text("Welcome back,")
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
-            Text("Rodolfo!")
+            Text("Nickname!")
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
             
@@ -68,7 +68,7 @@ struct HomeView: View {
                     .opacity(0)
                 
                 Button(action: {
-                    speechService.say("i feel ")
+                    speechService.say("I feel ")
                 }, label: {
                     NavigationLink(destination: FeelView(),  label: {
                         ZStack{

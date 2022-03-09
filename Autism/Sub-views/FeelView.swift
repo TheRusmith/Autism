@@ -22,7 +22,25 @@ struct FeelView: View {
                 speechservice.say("default")
         }
     }
-    
+//    private var imagename: String {
+//      String(
+//        localized: "points-count \(feels.title)",
+//        comment: "The pluralized score."
+//      )
+//    }
+    private var imagename2: String {
+      // 1
+      let localizedString
+      = NSLocalizedString(" %lld", comment: "Changed Language")
+      // 2
+      return String(format: localizedString, UserStore().feels)
+    }
+//    private var imagename: String {
+//      String(
+//        localized: "\(UserStore().feels)",
+//        comment: "The pluralized score."
+//      )
+//    }
     var body: some View {
         
         VStack{

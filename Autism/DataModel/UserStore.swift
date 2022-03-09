@@ -42,7 +42,7 @@ class UserStore: NSObject,ObservableObject, Identifiable  {
                                          WantEat(title:"Cotton Candy",imageName: "cotton candy")]
     
     @Published var wantdrink : [WantDrink] = [WantDrink(title:"Water",imageName: "water"),
-                                              WantDrink(title: "Coca",imageName: "coca"),
+                                              WantDrink(title: "Cola",imageName: "coca"),
                                               WantDrink(title:"Fanta",imageName: "fanta"),
                                               WantDrink(title:"Juice",imageName: "juice"),
                                               WantDrink(title:"Sprite",imageName: "sprite"),
@@ -107,3 +107,6 @@ enum views {
 //NavigationLink(destination: RecipeItemDetailView(recipe: $recipeArray[index]))
 //NavigationLink(destination: ChoiceView(selection: $selection[index]))
 let speechservice = SpeechService()
+
+
+

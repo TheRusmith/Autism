@@ -62,7 +62,7 @@ struct FinalView: View {
                     HStack{
                         
                         Button {
-                            speechservice.say(messagesFinal.last!)
+                            
                         } label: {
                             Rectangle()
                                 .frame(width: UIScreen.main.bounds.width*0.771, height: UIScreen.main.bounds.height*0.100, alignment: .center)

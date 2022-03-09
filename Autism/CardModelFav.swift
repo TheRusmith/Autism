@@ -16,7 +16,7 @@ struct CardModelFav: View {
         self.title = title
         self.image = image
     }
-    
+
     var body: some View {
         
         VStack{
@@ -60,7 +60,7 @@ struct CardModelFav: View {
 
 struct CardModelFav_Previews: PreviewProvider {
     static var previews: some View {
-        CardModelFav(title : "cane ",image: "fox")
+        CardModelFav(title : "happy ",image: "fox")
         
     }
 }
