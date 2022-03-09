@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showSettingsView = false
+    @AppStorage("name") private var name = ""
     let speechService = SpeechService()
     var body: some View {
     NavigationView{
@@ -57,7 +58,7 @@ struct HomeView: View {
             Text("Welcome back,")
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
-            Text("Nickname!")
+            Text("\(name)")
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
             
