@@ -1,86 +1,87 @@
-/* No comment provided by engineer. */
+///* No comment provided by engineer.
+//
+//
+//
+//"Add" = "Aggiungi";
+//
+///* No comment provided by engineer. */
+//"Back Home" = "Torna alla home";
+//
+///* No comment provided by engineer. */
+//"Create" = "Crea";
+//
+///* No comment provided by engineer. */
+//"Favorites" = "Preferiti";
+//
+///* No comment provided by engineer. */
+//"I feel..." = "Io sono";
+//
+///* No comment provided by engineer. */
+//"I want..." = "Vorrei";
+//
+///* No comment provided by engineer. */
+//"Insert your name " = "Inserisci il tuo nome";
+//
+///* No comment provided by engineer. */
+//"Language" = "Lingua";
+//
+///* No comment provided by engineer. */
+//"Read Again" = "Ascolta ancora";
+//
+///* No comment provided by engineer. */
+//"Share" = "Condividi";
+//
+///* No comment provided by engineer. */
+//"Voice" = "Voce";
+//
+///* No comment provided by engineer. */
+//"Welcome back," = "Bentornato,";
+//"I feel " = "Mi sento";
+//"i want " = "Vorrei";
+//"happy" = "felice";
+//"tired" = "stanco";
+//"angry" = "arrabbiato";
+//"sad" = "triste";
+//"I feel " = "mi sento";
+//"Drink" = "Bere";
+//"Eat" = "Mangiare";
+//"Go" = "Andare";
+//"Play" = "Giocare";
+//"People" = "Persone";
+//"Back" = "Indietro";
+//"Happy" = "Felice";
+//"Tired" = "Stanco";
+//"Sick" = "Ammalato";
+//"Angry" = "Arrabbiato";
+//"Sad" = "Triste";
+//"Football" = "Calcio";
+//"Soap bubbles" = "Bolle di sapone";
+//"Balloons" = "Palloncini";
+//"Basketball" = "Basket";
+//"Puzzle" = "Puzzle";
+//"Climbing Stairs" = "Salire le scale";
+//"Burger" = "Hamburger";
+//"Pizza" = "Pizza";
+//"Ice Cream" = "Gelato";
+//"Chips" = "Patatine fritte";
+//"Chocolate" = "Cioccolata";
+//"Cotton Candy" = "Zucchero filato";
+//"Water" = "Acqua";
+//"Cola" = "Cola";
+//"Fanta" = "Fanta";
+//"Juice" = "Succo";
+//"Sprite" = "Sprite";
+//"Lemonade" = "Limonata";
+//"Playground" = "Parco giochi";
+//"Cinema" = "Cinema";
+//"Zoo" = "Zoo";
+//"Home" = "Casa";
+//"Park" = "Parco";
+//"Dad" = "Papà";
+//"Mum" = "Mamma";
+//"Brother" = "Fratello";
+//"Sister" = "Sorella";
+//"Grandfather" = "Nonno";
+//"Grandmother" = "Nonna";
 
-
-
-"Add" = "Aggiungi";
-
-/* No comment provided by engineer. */
-"Back Home" = "Torna alla home";
-
-/* No comment provided by engineer. */
-"Create" = "Crea";
-
-/* No comment provided by engineer. */
-"Favorites" = "Preferiti";
-
-/* No comment provided by engineer. */
-"I feel..." = "Io sono";
-
-/* No comment provided by engineer. */
-"I want..." = "Vorrei";
-
-/* No comment provided by engineer. */
-"Insert your name " = "Inserisci il tuo nome";
-
-/* No comment provided by engineer. */
-"Language" = "Lingua";
-
-/* No comment provided by engineer. */
-"Read Again" = "Ascolta ancora";
-
-/* No comment provided by engineer. */
-"Share" = "Condividi";
-
-/* No comment provided by engineer. */
-"Voice" = "Voce";
-
-/* No comment provided by engineer. */
-"Welcome back," = "Bentornato,";
-"I feel " = "Mi sento";
-"i want " = "Vorrei";
-"happy" = "felice";
-"tired" = "stanco";
-"angry" = "arrabbiato";
-"sad" = "triste";
-"I feel " = "mi sento";
-"Drink" = "Bere";
-"Eat" = "Mangiare";
-"Go" = "Andare";
-"Play" = "Giocare";
-"People" = "Persone";
-"Back" = "Indietro";
-"Happy" = "Felice";
-"Tired" = "Stanco";
-"Sick" = "Ammalato";
-"Angry" = "Arrabbiato";
-"Sad" = "Triste";
-"Football" = "Calcio";
-"Soap bubbles" = "Bolle di sapone";
-"Balloons" = "Palloncini";
-"Basketball" = "Basket";
-"Puzzle" = "Puzzle";
-"Climbing Stairs" = "Salire le scale";
-"Burger" = "Hamburger";
-"Pizza" = "Pizza";
-"Ice Cream" = "Gelato";
-"Chips" = "Patatine fritte";
-"Chocolate" = "Cioccolata";
-"Cotton Candy" = "Zucchero filato";
-"Water" = "Acqua";
-"Cola" = "Cola";
-"Fanta" = "Fanta";
-"Juice" = "Succo";
-"Sprite" = "Sprite";
-"Lemonade" = "Limonata";
-"Playground" = "Parco giochi";
-"Cinema" = "Cinema";
-"Zoo" = "Zoo";
-"Home" = "Casa";
-"Park" = "Parco";
-"Dad" = "Papà";
-"Mum" = "Mamma";
-"Brother" = "Fratello";
-"Sister" = "Sorella";
-"Grandfather" = "Nonno";
-"Grandmother" = "Nonna";
 

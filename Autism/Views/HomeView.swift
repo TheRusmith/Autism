@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showSettingsView = false
-    @AppStorage("name") private var name = ""
+    @AppStorage("name") private var name = "Nickname"
     let speechService = SpeechService()
     var body: some View {
     NavigationView{
